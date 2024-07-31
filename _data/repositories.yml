@@ -1,14 +1,13 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - fverdoja
 
 repo_description_lines_max: 2
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - aalto-intelligent-robotics/bayesianfloorfield
+  - fverdoja/Fast-3D-Pointcloud-Segmentation
+  - fverdoja/LAD-Laplacian-Anomaly-Detector
+  - aalto-intelligent-robotics/mc-dropout-notebooks
+  - aalto-intelligent-robotics/uncertain_turtlebot_navigation
+  - jsll/IROS2018-Hallucinating-Robots
+  - fverdoja/ros_maps_to_pedsim

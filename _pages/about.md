@@ -2,24 +2,36 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: Academy Research Fellow, <a href=https://irobotics.aalto.fi/>Intelligent Robotics, Aalto University</a>, Finland
 
 profile:
   align: right
-  image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
-
+  image: fra.jpg
+  image_circular: true # crops the image to make it circular
+  more_info:
 news: true # includes a list of news items
-selected_papers: true # includes a list of papers marked as "selected={true}"
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Francesco Verdoja received his PhD in Computer Science from University of Turin,
+Italy in July 2017. During his PhD studies his research focused on graph-based
+image processing, with his work on tumor segmentation awarding him the "Best
+student award" at the International Computer Vision Summer School 2014
+(ICVSS14). Since September 2017 he joined the Intelligent Robotics group at
+Aalto University in Helsinki, Finland as postdoctoral researcher. At the same
+time, he was working part-time as AI scientist for the AI consultancy company
+SiloAI.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+Currently, he works as staff scientist in robotics in Aalto University. He is
+the coordinator for the Aalto Robot Lab. His research focuses on robotic
+perception and mapping with particular interest on increasing environment
+understanding by extracting semantic knowledge from spatial representations. His
+contributions include for example mapping complete occupancy of objects from
+partial sensor data and estimating people flow from architecture, as well as the
+formulation of the idea of hypermaps as next step beyond multi-layer mapping for
+robotics.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+Other achievements include three patents based on his research, the preparation
+and management of two large scale Finnish national research projects, and the
+organization of several workshops at top conferences in robotics.
