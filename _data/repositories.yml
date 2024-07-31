@@ -1,7 +1,9 @@
 github_users:
   - fverdoja
+  - aalto-intelligent-robotics
+  - jsll
 
-repo_description_lines_max: 2
+repo_description_lines_max: 3
 
 github_repos:
   - aalto-intelligent-robotics/bayesianfloorfield
