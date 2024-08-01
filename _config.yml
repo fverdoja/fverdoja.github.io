@@ -193,7 +193,10 @@ collections:
       layout: post
     output: true
     permalink: /:collection/:title/
-  projects:
+  funding:
+    output: true
+    permalink: /:collection/:title/
+  events:
     output: true
     permalink: /:collection/:title/
 
@@ -332,8 +335,8 @@ scholar:
   details_link: Details
 
   query: "@*"
-  sort_by: month
-  order: descending
+  sort_by: year, month
+  order: descending, descending
   group_by: year, type
   group_order: descending, ascending
   type_order: [article, inproceedings, incollection, online, patent, phdthesis, techreport]
@@ -369,6 +372,7 @@ filtered_bibtex_keywords:
     supp,
     video,
     website,
+    funding,
   ]
 
 # Maximum number of authors to be shown for each publication (more authors are visible on click)
