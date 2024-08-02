@@ -106,6 +106,9 @@
   author      = {Bracco, Christian and Verdoja, Francesco and Grangetto, Marco and 
                  Di Dia, Amalia and Racca, Manuela and Varetto, Teresio and Stasi, 
                  Michele},
+  month       = feb,
+  year        = {2016},
+  pages       = {99},
   abstract    = {Introduction: The aim of this work is to show the results of 
                  GTV automatic segmentation based on dynamic PET acquisition.
                  With respect to single voxel segmentation the temporal
@@ -140,9 +143,8 @@
                  segmentation of dynamic PET images based on RXD output seems to
                  be promising.},
   pdf         = {https://iris.unito.it/retrieve/e27ce428-8b03-2581-e053-d805fe0acbaa/copertina.pdf},
-  month       = feb,
-  year        = {2016},
-  pages       = {99}
+  abbr        = {AIFM},
+  preview     = {aifm_16.jpg}
 }
 
 @inproceedings{201609_verdoja_global,
@@ -185,7 +187,21 @@
                  Grangetto, Marco},
   month       = mar,
   year        = {2017},
-  funding     = {sisvel}
+  funding     = {sisvel},
+  abstract    = {A method and an apparatus for encoding and/or decoding digital
+                 images or video streams are provided, wherein the encoding
+                 apparatus includes a processor configured for reading at least
+                 a portion of the image, segmenting the portion of the image in
+                 order to obtain groups of pixels identified by borders
+                 information and containing at least two pixels having one or
+                 more homogeneous characteristics, computing, for each group of
+                 pixels, a weight map on the basis of the borders information
+                 associated to the group of pixels, a graph transform matrix on
+                 the basis of the weight map, and transform coefficients on the
+                 basis of the graph transform matrix (U) and of the pixels
+                 contained in the group of pixels.},
+  pdf         = {https://patentimages.storage.googleapis.com/f4/8a/16/bab6bd298dea8d/US20180278957A1.pdf},
+  preview     = {patent_17.png}
 }
 
 @inproceedings{201703_verdoja_directional,
@@ -199,7 +215,29 @@
   month       = mar,
   year        = {2017},
   pages       = {1517--1521},
-  funding     = {sisvel}
+  funding     = {sisvel},
+  abstract    = {Graph-based models have recently attracted attention for their
+                 potential to enhance transform coding image compression thanks
+                 to their capability to efficiently represent discontinuities.
+                 Graph transform gets closer to the optimal KLT by using weights
+                 that represent inter-pixel correlations but the extra cost to
+                 provide such weights can overwhelm the gain, especially in the
+                 case of natural images rich of details. In this paper we
+                 provide a novel idea to make graph transform adaptive to the
+                 actual image content, avoiding the need to encode the graph
+                 weights as side information. We show that an approach similar
+                 to spatial prediction can be used to effectively predict graph
+                 weights in place of pixels; in particular, we propose the
+                 design of directional graph weight prediction modes and show
+                 the resulting coding gain. The proposed approach can be used
+                 jointly with other graph based intra prediction methods to
+                 further enhance compression. Our comparative experimental
+                 analysis, carried out with a fully fledged still image coding
+                 prototype, shows that we are able to achieve significant coding
+                 gains.},
+  pdf         = {https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7952410},
+  abbr        = {ICASSP},
+  preview     = {icassp_2_17.png}
 }
 
 @inproceedings{201703_verdoja_efficient,
@@ -214,7 +252,26 @@
   month       = mar,
   year        = {2017},
   pages       = {1462--1466},
-  funding     = {sisvel}
+  funding     = {sisvel},
+  abstract    = {Segmentation is one of the most important low-level tasks in 
+                 image processing as it enables many higher level computer
+                 vision tasks like object recognition and tracking. Segmentation
+                 can also be exploited for image compression using recent
+                 graph-based algorithms, provided that the corresponding
+                 contours can be represented efficiently. Transmission of
+                 borders is also key to distributed computer vision. In this
+                 paper we propose a new chain code tailored to compress
+                 segmentation contours. Based on the widely known 3OT, our
+                 algorithm is able to encode regions avoiding borders it has
+                 already coded once and without the need of any starting point
+                 information for each region. We tested our method against three
+                 other state of the art chain codes over the BSDS500 dataset,
+                 and we demonstrated that the proposed chain code achieves the
+                 highest compression ratio, resulting on average in over 27%
+                 bit-per-pixel saving.},
+  pdf         = {https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7952399},
+  abbr        = {ICASSP},
+  preview     = {icassp_1_17.png}
 }
 
 @inproceedings{201707_verdoja_fast,
@@ -229,7 +286,28 @@
   month       = jul,
   year        = {2017},
   pages       = {1285--1290},
-  funding     = {sisvel}
+  funding     = {sisvel},
+  abstract    = {Segmentation of 3D colored point clouds is a research field
+                 with renewed interest thanks to recent availability of
+                 inexpensive consumer RGB-D cameras and its importance as an
+                 unavoidable low-level step in many robotic applications.
+                 However, 3D data's nature makes the task challenging and, thus,
+                 many different techniques are being proposed , all of which
+                 require expensive computational costs. This paper presents a
+                 novel fast method for 3D colored point cloud segmen-tation. It
+                 starts with supervoxel partitioning of the cloud, i.e., an
+                 oversegmentation of the points in the cloud. Then it leverages
+                 on a novel metric exploiting both geometry and color to
+                 iteratively merge the supervoxels to obtain a 3D segmentation
+                 where the hierarchical structure of partitions is maintained.
+                 The algorithm also presents computational complexity linear to
+                 the size of the input. Experimental results over two publicly
+                 available datasets demonstrate that our proposed method
+                 outperforms state-of-the-art techniques.},
+  pdf         = {https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8019382},
+  code        = {https://github.com/fverdoja/Fast-3D-Pointcloud-Segmentation},
+  abbr        = {ICME},
+  preview     = {icme_17.png}
 }
 
 @phdthesis{201707_verdoja_use,
@@ -243,7 +321,34 @@
   author      = {Verdoja, Francesco},
   month       = july,
   year        = {2017},
-  funding     = {sisvel}
+  funding     = {sisvel},
+  abstract    = {Graph-based approaches have recently seen a spike of interest 
+                 in the image processing and computer vision communities, and
+                 many classical problems are finding new solutions thanks to
+                 these techniques. The Graph Fourier Transform (GFT), the
+                 equivalent of the Fourier transform for graph signals, is used
+                 in many domains to analyze and process data modeled by a graph.
+                 In this thesis we present some classical image processing
+                 problems that can be solved through the use of GFT. We'll focus
+                 our attention on two main research area: the first is image
+                 compression, where the use of the GFT is finding its way in
+                 recent literature; we'll propose two novel ways to deal with
+                 the problem of graph weight encoding. We'll also propose
+                 approaches to reduce overhead costs of shape-adaptive
+                 compression methods. The second research field is image anomaly
+                 detection, GFT has never been proposed to this date to solve
+                 this class of problems; we'll discuss here a novel technique
+                 and we'll test its application on hyperspectral and medical
+                 images. We'll show how graph approaches can be used to
+                 generalize and improve performance of the widely popular RX
+                 Detector, by reducing its computational complexity while at the
+                 same time fixing the well known problem of its dependency from
+                 covariance matrix estimation and inversion. All our experiments
+                 confirm that graph-based approaches leveraging on the GFT can
+                 be a viable option to solve tasks in multiple image processing
+                 domains.},
+  pdf         = {https://iris.unito.it/retrieve/handle/2318/1645345/352523/PhdThesis_Verdoja.pdf},
+  preview     = {thesis_17.png}
 }
 
 @patent{201809_grangetto_method,
@@ -255,7 +360,26 @@
   author      = {Grangetto, Marco and Verdoja, Francesco},
   month       = sep,
   year        = {2018},
-  funding     = {sisvel}
+  funding     = {sisvel},
+  abstract    = {A method for encoding digital images or video streams, 
+                 includes a receiving phase, wherein a portion of an image is
+                 received; a graph weights prediction phase, wherein the
+                 elements of a weights matrix associated to the graph related to
+                 the blocks of the image (predicted blocks) are predicted on the
+                 basis of reconstructed, de-quantized and inverse-transformed
+                 pixel values of at least one previously coded block (predictor
+                 block) of the image, the weights matrix being a matrix
+                 comprising elements denoting the level of similarity between a
+                 pair of pixels composing said image, a graph transform
+                 computation phase, wherein the graph Fourier transform of the
+                 blocks of the image is performed, obtaining for the blocks a
+                 set of coefficients determined on the basis of the predicted
+                 weights; a coefficients quantization phase, wherein the
+                 coefficients are quantized an output phase wherein a bitstream
+                 comprising the transformed and quantized coefficients is
+                 transmitted and/or stored.},
+  pdf         = {https://patentimages.storage.googleapis.com/22/35/dc/d31d103dd9f3dd/US20200014955A1.pdf},
+  preview     = {patent_2_18.png}
 }
 
 @patent{201809_grangetto_methods,
@@ -267,8 +391,37 @@
   author      = {Grangetto, Marco and Verdoja, Francesco},
   month       = sep,
   year        = {2018},
-  funding     = {sisvel}
-
+  funding     = {sisvel},
+  abstract    = {The present invention relates to a method for encoding the 
+                 borders of pixel regions of an image, wherein the borders
+                 contain a sequence of vertices subdividing the image into
+                 regions of pixels (superpixels), by generating a sequence of
+                 symbols from an alphabet including the step of: defining for
+                 each superpixel a first vertex for coding the borders of the
+                 superpixel according to a criterion common to all superpixels;
+                 defining for each superpixel the same coding order of the
+                 border vertices, either clockwise or counter-clockwise;
+                 defining the order for coding the superpixels on the base of a
+                 common rule depending on the relative positions of the first
+                 vertices; defining a set of vertices as a known border, wherein
+                 the following steps are performed for selecting a symbol of the
+                 alphabet, for encoding the borders of the superpixels: a)
+                 determining the first vertex of the next superpixel border
+                 individuated by the common criterion; b) determining the next
+                 vertex to be encoded on the basis of the coding direction; c)
+                 selecting a first symbol (“0”) for encoding the next vertex if
+                 the next vertex of a border pertains to the known border, d)
+                 selecting a symbol (“1”; “2”) different from the first symbol
+                 (“0”) if the next vertex is not in the known border; e)
+                 repeating steps b), c), d) and e) until all vertices of the
+                 superpixel border have been encoded; f) adding each vertex of
+                 the superpixel border that was not in the known border to the
+                 set; g) determining the next superpixel whose border is to be
+                 encoded according to the common rule, if any; i) repeating
+                 steps a)-g) until the borders of all the superpixels of the
+                 image have being added to the known border.},
+  pdf         = {https://patentimages.storage.googleapis.com/f2/f7/12/50250a322ba55b/US10708601.pdf},
+  preview     = {patent_1_18.png}
 }
 
 @inproceedings{201810_lundell_hallucinating,
@@ -283,7 +436,29 @@
   month       = oct,
   year        = {2018},
   pages       = {4781--4787},
-  funding     = {rose}
+  funding     = {rose},
+  abstract    = {Many mobile robots rely on 2D laser scanners for localization, 
+                 mapping, and navigation. However, those sensors are unable to
+                 correctly provide distance to obstacles such as glass panels
+                 and tables whose actual occupancy is invisible at the height
+                 the sensor is measuring. In this work, instead of estimating
+                 the distance to obstacles from richer sensor readings such as
+                 3D lasers or RGBD sensors, we present a method to estimate the
+                 distance directly from raw 2D laser data. To learn a mapping
+                 from raw 2D laser distances to obstacle distances we frame the
+                 problem as a learning task and train a neural network formed as
+                 an autoencoder. A novel configuration of network
+                 hyperparameters is proposed for the task at hand and is
+                 quantitatively validated on a test set. Finally, we
+                 qualitatively demonstrate in real time on a Care-O-bot 4 that
+                 the trained network can successfully infer obstacle distances
+                 from partial 2D laser readings.},
+  arxiv       = {1805.12338},
+  pdf         = {https://arxiv.org/pdf/1805.12338},
+  code        = {https://github.com/jsll/IROS2018-Hallucinating-Robots},
+  video       = {https://www.youtube.com/watch?v=J5GOfbPTH88},
+  abbr        = {IROS},
+  preview     = {iros_18.jpg}
 }
 
 @inproceedings{201910_verdoja_deep,
@@ -297,7 +472,39 @@
   month       = oct,
   year        = {2019},
   pages       = {112--119},
-  funding     = {rose}
+  funding     = {rose},
+  abstract    = {Most mobile robots for indoor use rely on 2D laser scanners for
+                 localization, mapping and navigation. These sensors, however,
+                 cannot detect transparent surfaces or measure the full
+                 occupancy of complex objects such as tables. Deep Neural
+                 Networks have recently been proposed to overcome this
+                 limitation by learning to estimate object occupancy. These
+                 estimates are nevertheless subject to uncertainty, making the
+                 evaluation of their confidence an important issue for these
+                 measures to be useful for autonomous navigation and mapping. In
+                 this work we approach the problem from two sides. First we
+                 discuss uncertainty estimation in deep models, proposing a
+                 solution based on a fully convolutional neural network. The
+                 proposed architecture is not restricted by the assumption that
+                 the uncertainty follows a Gaussian model, as in the case of
+                 many popular solutions for deep model uncertainty estimation,
+                 such as Monte-Carlo Dropout. We present results showing that
+                 uncertainty over obstacle distances is actually better modeled
+                 with a Laplace distribution. Then, we propose a novel approach
+                 to build maps based on Deep Neural Network uncertainty models.
+                 In particular, we present an algorithm to build a map that
+                 includes information over obstacle distance estimates while
+                 taking into account the level of uncertainty in each estimate.
+                 We show how the constructed map can be used to increase global
+                 navigation safety by planning trajectories which avoid areas of
+                 high uncertainty, enabling higher autonomy for mobile robots in
+                 indoor settings.},
+  arxiv       = {1809.04891v3},
+  pdf         = {https://arxiv.org/pdf/1809.04891v3},
+  code        = {https://github.com/aalto-intelligent-robotics/uncertain_turtlebot_navigation},
+  video       = {https://www.youtube.com/watch?v=J5GOfbPTH88},
+  abbr        = {Humanoids},
+  preview     = {humanoids_19.jpg}
 }
 
 @inproceedings{201911_lundell_robust,
@@ -312,7 +519,32 @@
   month       = nov,
   year        = {2019},
   pages       = {1526--1532},
-  funding     = {rose}
+  funding     = {rose},
+  abstract    = {We present a method for planning robust grasps over uncertain
+                 shape completed objects. For shape completion, a deep neural
+                 network is trained to take a partial view of the object as
+                 input and outputs the completed shape as a voxel grid. The key
+                 part of the network is dropout layers which are enabled not
+                 only during training but also at run-time to generate a set of
+                 shape samples representing the shape uncertainty through Monte
+                 Carlo sampling. Given the set of shape completed objects, we
+                 generate grasp candidates on the mean object shape but evaluate
+                 them based on their joint performance in terms of analytical
+                 grasp metrics on all the shape candidates. We experimentally
+                 validate and benchmark our method against another
+                 state-of-the-art method with a Barrett hand on 90000 grasps in
+                 simulation and 200 grasps on a real Franka Emika Panda. All
+                 experimental results show statistically significant
+                 improvements both in terms of grasp quality metrics and grasp
+                 success rate, demonstrating that planning
+                 shape-uncertainty-aware grasps brings significant advantages
+                 over solely planning on a single shape estimate, especially
+                 when dealing with complex or unknown objects.},
+  arxiv       = {1903.00645},
+  pdf         = {https://arxiv.org/pdf/1903.00645},
+  code        = {https://github.com/aalto-intelligent-robotics/shape_completion_network},
+  abbr        = {IROS},
+  preview     = {iros_19.jpg}
 }
 
 @article{202001_verdoja_graph,
@@ -326,7 +558,25 @@
   author      = {Verdoja, Francesco and Grangetto, Marco},
   month       = jan,
   year        = {2020},
-  funding     = {sisvel}
+  funding     = {sisvel},
+  abstract    = {Reed-Xiaoli detector (RXD) is recognized as the benchmark 
+                 algorithm for image anomaly detection; however, it presents
+                 known limitations, namely the dependence over the image
+                 following a multivariate Gaussian model, the estimation and
+                 inversion of a high-dimensional covariance matrix, and the
+                 inability to effectively include spatial awareness in its
+                 evaluation. In this work, a novel graph-based solution to the
+                 image anomaly detection problem is proposed; leveraging the
+                 graph Fourier transform, we are able to overcome some of RXD's
+                 limitations while reducing computational cost at the same time.
+                 Tests over both hyperspectral and medical images, using both
+                 synthetic and real anomalies, prove the proposed technique is
+                 able to obtain significant gains over performance by other
+                 algorithms in the state of the art.},
+  pdf         = {https://link.springer.com/content/pdf/10.1007/s00138-020-01059-4.pdf},
+  code        = {https://github.com/fverdoja/LAD-Laplacian-Anomaly-Detector},
+  abbr        = {MVAP},
+  preview     = {mvap_20.webp}
 }
 
 @inproceedings{202005_lundell_beyond,
