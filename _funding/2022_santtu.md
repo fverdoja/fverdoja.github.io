@@ -33,5 +33,5 @@ in fast-growing market areas.
 ## Related publications
 
 <div class="publications">
-    {% bibliography --query @*[funding=santtu] --group_by type --group_order ascending %}
+    {% bibliography --query @*[funding~=santtu] --group_by type --group_order ascending %}
 </div>

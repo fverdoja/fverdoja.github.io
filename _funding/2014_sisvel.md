@@ -14,5 +14,5 @@ importance: 30
 ## Related publications
 
 <div class="publications">
-    {% bibliography --query @*[funding=sisvel] --group_by type --group_order ascending %}
+    {% bibliography --query @*[funding~=sisvel] --group_by type --group_order ascending %}
 </div>

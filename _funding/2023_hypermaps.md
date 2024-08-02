@@ -32,5 +32,5 @@ of Bonn, Technical University of Munich, KONE ltd, and GIM Robotics.
 ## Related publications
 
 <div class="publications">
-    {% bibliography --query @*[funding=hypermaps] --group_by type --group_order ascending %}
+    {% bibliography --query @*[funding~=hypermaps] --group_by type --group_order ascending %}
 </div>

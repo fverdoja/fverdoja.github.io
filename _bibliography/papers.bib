@@ -11,9 +11,20 @@
   month       = oct,
   year        = {2014},
   pages       = {937--941},
-  award       = {Awarded for this work by *Microsoft Research Cambridge* at the 
-                 *2014 International Computer Vision Summer School (ICVSS)*},
-  award_name  = {Best Student Award}
+  award       = {Awarded for this work by *Microsoft Research Cambridge* at the *2014 International Computer Vision Summer School (ICVSS)*},
+  award_name  = {Best Student Award},
+  abstract    = {In this paper a novel technique to segment tumor voxels in 
+                 dynamic positron emission tomography (PET) scans is proposed.
+                 An innovative anomaly detection tool tailored for 3-points
+                 dynamic PET scans is designed. The algorithm allows the
+                 identification of tumoral cells in dynamic FDG-PET scans thanks
+                 to their peculiar anaerobic metabolism experienced over time.
+                 The proposed tool is preliminarily tested on a small dataset
+                 showing promising performance as compared to the state of the
+                 art in terms of both accuracy and classification errors.},
+  pdf         = {https://iris.unito.it/retrieve/handle/2318/154166/148728/PID3258293_4aperto.pdf},
+  abbr        = {ICIP},
+  preview     = {icip_14.png}
 }
 
 @inproceedings{201509_fracastoro_superpixel-driven,
@@ -30,7 +41,24 @@
   pages       = {2631--2635},
   award       = {Awarded at the 2015 IEEE Int.\ Conf.\ on Image Processing (ICIP)},
   award_name  = {Best 10\% Paper},
-  funding     = {sisvel}
+  funding     = {sisvel},
+  abstract    = {Block-based compression tends to be inefficient when blocks 
+                 contain arbitrary shaped discontinuities. Recently, graph-based
+                 approaches have been proposed to address this issue, but the
+                 cost of transmitting graph topology often overcome the gain of
+                 such techniques. In this work we propose a new
+                 Superpixel-driven Graph Transform (SDGT) that uses clusters of
+                 superpixels, which have the ability to adhere nicely to edges
+                 in the image, as coding blocks and computes inside these
+                 homogeneously colored regions a graph transform which is
+                 shape-adaptive. Doing so, only the borders of the regions and
+                 the transform coefficients need to be transmitted, in place of
+                 all the structure of the graph. The proposed method is finally
+                 compared to DCT and the experimental results show how it is
+                 able to outperform DCT both visually and in term of PSNR.},
+  pdf         = {https://iris.unito.it/bitstream/2318/1557609/2/articleICIP15.pdf},
+  abbr        = {ICIP},
+  preview     = {icip_15.png}
 }
 
 @incollection{201509_verdoja_fast,
@@ -46,20 +74,72 @@
   month       = sep,
   year        = {2015},
   pages       = {364--374},
-  funding     = {sisvel}
+  funding     = {sisvel},
+  abstract    = {Image segmentation is one of the core task in image processing.
+                 Traditionally such operation is performed starting from single
+                 pixels requiring a significant amount of computations. Only
+                 recently it has been shown that superpixels can be used to
+                 improve segmentation performance. In this work we  propose a
+                 novel superpixel-based hierarchical approach for image
+                 segmentation that works by iteratively merging nodes of a
+                 weighted undirected graph initialized with the superpixels
+                 regions. Proper metrics to drive the regions merging are
+                 proposed and experimentally validated using the standard
+                 Berkeley Dataset. Our analysis shows that the proposed
+                 algorithm runs faster than state of the art techniques while
+                 providing accurate segmentation results both in terms of visual
+                 and objective metrics.},
+  pdf         = {https://link.springer.com/content/pdf/10.1007/978-3-319-23231-7_33.pdf},
+  abbr        = {ICIAP},
+  preview     = {iciap_15.jpg}
 }
 
-@article{201602_bracco_automatic,
+@incollection{201602_bracco_automatic,
+  series      = {Physica Medica},
   bibtex_show = {true},
   title       = {Automatic {GTV} contouring applying anomaly detection algorithm on 
                  dynamic {FDG} {PET} images},
+  number      = {1},
   volume      = {32},
   doi         = {10.1016/j.ejmp.2016.01.343},
-  number      = {1},
-  journal     = {Physica Medica},
+  booktitle   = {Abstracts of the 9th National Congress of the Associazione Italiana di Fisica Medica},
   author      = {Bracco, Christian and Verdoja, Francesco and Grangetto, Marco and 
                  Di Dia, Amalia and Racca, Manuela and Varetto, Teresio and Stasi, 
                  Michele},
+  abstract    = {Introduction: The aim of this work is to show the results of 
+                 GTV automatic segmentation based on dynamic PET acquisition.
+                 With respect to single voxel segmentation the temporal
+                 information is used to improve quality of GTV delineation. The
+                 segmentation algorithm proposed exploits the theoretic
+                 assumption that FDG uptake over time in cancer cells is very
+                 different from the one in normal tissues and therefore in this
+                 study anomaly detection is used to look for tumor
+                 peculiar-anomalous TACs. Material and Methods: For each patient
+                 two list mode datasets of images were acquired. The first one
+                 scan (basal) was acquired one hour after FDG injection and
+                 reconstructed as static frame. The last one (delayed) was
+                 acquired half one hour after the first scan and reconstructed
+                 as dynamic scan. Two delayed scans were registered to the basal
+                 scan. A modified version of the RX Detector was used. RX
+                 Detector usually works in RGB, but in this study its use on
+                 TACs has been explored passing the three grayscale images in
+                 place of the three channels of RGB. The resulting single image,
+                 which actually is a matrix of Mahalanobis distances, presents
+                 values that are very high for voxels whose TAC has anomalous
+                 temporal behavior. Finally, threshold segmentation is performed
+                 on the distance matrix. On a dataset of 10 patients
+                 segmentation techniques present in the literature working on
+                 single PET scan have been implemented as well as segmentation
+                 techniques based on RX Detector output. Results: Spatial
+                 overlap index (SOI) was used as metric to evaluate the
+                 segmentation accuracy. All of the segmentation algorithms
+                 implemented on RXD output show better SOI (0.507 ± 0.158) than
+                 algorithm based on SUV, i.e. Brambilla, SOI 0.278 ± 0.236. A
+                 manual contour drawn by experienced Nuclear Physician was the
+                 reference. Conclusion: Although a small dataset, the
+                 segmentation of dynamic PET images based on RXD output seems to
+                 be promising.},
+  pdf         = {https://iris.unito.it/retrieve/e27ce428-8b03-2581-e053-d805fe0acbaa/copertina.pdf},
   month       = feb,
   year        = {2016},
   pages       = {99}
@@ -78,7 +158,21 @@
                  Racca, Manuela and Stasi, Michele},
   month       = sep,
   year        = {2016},
-  pages       = {4131--4135}
+  pages       = {4131--4135},
+  abstract    = {In this paper we explore the application of anomaly detection
+                 techniques to tumor voxels segmentation. The developed
+                 algorithms work on 3-points dynamic FDG-PET acquisitions and
+                 leverage on the peculiar anaerobic metabolism that cancer cells
+                 experience over time. A few different global or local anomaly
+                 detectors are discussed, together with an investigation over
+                 two different algorithms aiming to estimate normal tissues'
+                 statistical distribution. Finally, all the proposed algorithms
+                 are tested on a dataset composed of 9 patients proving that
+                 anomaly detectors are able to outperform techniques in the
+                 state of the art.},
+  pdf         = {https://web.archive.org/web/20180718235804id_/https://iris.unito.it/retrieve/handle/2318/1610112/258226/ArticleTumors2016_IRIS.pdf},
+  abbr        = {ICIP},
+  preview     = {icip_16.png}
 }
 
 @patent{201703_fracastoro_methods,
@@ -504,7 +598,7 @@
   note        = {Presented at the ``Vision-Language Models for Navigation and 
                  Manipulation (VLMNM)'' workshop at the IEEE Int.\ Conf.\ on 
                  Robotics and Automation (ICRA)},
-  funding     = {hypermaps}
+  funding     = {hypermaps, santtu}
 }
 
 @online{202405_pekkanen_modeling,
