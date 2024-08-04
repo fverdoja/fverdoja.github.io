@@ -3,7 +3,8 @@ layout: page
 title: "SANTTU: To reduce stress from machine & operator"
 description: Business Finland
 #img: assets/img/fra.jpg
-importance: 20
+importance: 2
+category: past
 ---
 
 2-year co-innovation project on the development of semi-autonomous assistance

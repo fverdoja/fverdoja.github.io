@@ -3,7 +3,8 @@ layout: page
 title: "Ph.D. scholarship"
 description: Sisvel Technology
 #img: assets/img/fra.jpg
-importance: 30
+importance: 5
+category: past
 ---
 
 3-year full Ph.D. scholarship

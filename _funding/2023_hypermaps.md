@@ -3,10 +3,12 @@ layout: page
 title: "Hypermaps: Closing the complexity gap in robotic mapping"
 description: National Reseach Council of Finland
 #img: assets/img/fra.jpg
-importance: 10
+importance: 1
+category: current
 ---
 
-4-year research fellowship on closing the complexity gap in robotic mapping
+4-year research fellowship on multi-layer and semantic spatial representations
+for robotics.
 
 - **Role:** Principal investigator
 - **Budget:** 834k€
