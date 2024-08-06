@@ -2,7 +2,6 @@
 layout: page
 title: "SANTTU: To reduce stress from machine & operator"
 description: Business Finland
-#img: assets/img/fra.jpg
 importance: 2
 category: past
 ---

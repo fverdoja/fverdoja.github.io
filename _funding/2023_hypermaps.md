@@ -2,7 +2,6 @@
 layout: page
 title: "Hypermaps: Closing the complexity gap in robotic mapping"
 description: National Reseach Council of Finland
-#img: assets/img/fra.jpg
 importance: 1
 category: current
 ---

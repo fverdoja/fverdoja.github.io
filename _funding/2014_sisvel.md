@@ -2,7 +2,6 @@
 layout: page
 title: "Ph.D. scholarship"
 description: Sisvel Technology
-#img: assets/img/fra.jpg
 importance: 5
 category: past
 ---
