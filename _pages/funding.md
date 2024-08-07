@@ -4,7 +4,7 @@ title: funding
 permalink: /funding/
 description: The research I conduct has been funded by these sources
 nav: true
-nav_order: 3
+nav_order: 5
 display_categories: [current, past]
 horizontal: true
 ---
