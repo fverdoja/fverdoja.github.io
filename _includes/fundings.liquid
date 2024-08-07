@@ -1,0 +1,42 @@
+<div class="col">
+  <a href="{% if funding.redirect %}{{ funding.redirect }}{% else %}{{ funding.url | relative_url }}{% endif %}">
+    <div class="card h-100 hoverable">
+      {% if funding.img %}
+        {%
+          include figure.liquid
+          loading="eager"
+          path=funding.img
+          sizes = "250px"
+          alt="funding thumbnail"
+          class="card-img-top"
+        %}
+      {% endif %}
+      <div class="card-body">
+        <h2 class="card-title">{{ funding.title }}</h2>
+        <p class="card-text">
+          <i>{{ funding.subtitle }}</i>
+        </p>
+        <p class="card-text">
+          {{ funding.funder }}
+          <br>
+          {{ funding.start_date | date: '%b %Y' }}–{{ funding.end_date | date: '%b %Y' }}
+        </p>
+        <div class="row ml-1 mr-1 p-0">
+          {% if funding.github %}
+            <div class="github-icon">
+              <div class="icon" data-toggle="tooltip" title="Code Repository">
+                <a href="{{ funding.github }}"><i class="fa-brands fa-github gh-icon"></i></a>
+              </div>
+              {% if funding.github_stars %}
+                <span class="stars" data-toggle="tooltip" title="GitHub Stars">
+                  <i class="fa-solid fa-star"></i>
+                  <span id="{{ funding.github_stars }}-stars"></span>
+                </span>
+              {% endif %}
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </a>
+</div>

@@ -1,8 +1,10 @@
 ---
 layout: page
-title: "Hypermaps: Closing the complexity gap in robotic mapping"
-description: National Reseach Council of Finland
-importance: 1
+title: Hypermaps
+subtitle: Closing the complexity gap in robotic mapping
+funder: National Reseach Council of Finland
+start_date: 2023-09-01
+end_date: 2027-08-31
 category: current
 ---
 

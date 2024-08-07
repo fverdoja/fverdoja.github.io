@@ -1,8 +1,10 @@
 ---
 layout: page
-title: "Ph.D. scholarship"
-description: Sisvel Technology
-importance: 5
+title: Ph.D. scholarship
+subtitle:
+funder: Sisvel Technology
+start_date: 2014-01-01
+end_date: 2016-12-31
 category: past
 ---
 

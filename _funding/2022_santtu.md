@@ -1,8 +1,10 @@
 ---
 layout: page
-title: "SANTTU: To reduce stress from machine & operator"
-description: Business Finland
-importance: 2
+title: SANTTU
+subtitle: To reduce stress from machine & operator
+funder: Business Finland
+start_date: 2022-05-01
+end_date: 2024-04-30
 category: past
 ---
 

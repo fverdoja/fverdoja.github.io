@@ -18,20 +18,20 @@ horizontal: true
     <h2 class="category">{{ category }}</h2>
   </a>
   {% assign categorized_fundings = site.funding | where: "category", category %}
-  {% assign sorted_fundings = categorized_fundings | sort: "importance" %}
+  {% assign sorted_fundings = categorized_fundings | sort: "start_date" | reverse %}
   <!-- Generate cards for each funding -->
   {% if page.horizontal %}
   <div class="container">
     <div class="row row-cols-1 row-cols-md-2">
-    {% for project in sorted_fundings %}
-      {% include projects_horizontal.liquid %}
+    {% for funding in sorted_fundings %}
+      {% include fundings_horizontal.liquid %}
     {% endfor %}
     </div>
   </div>
   {% else %}
   <div class="row row-cols-1 row-cols-md-3">
-    {% for project in sorted_fundings %}
-      {% include projects.liquid %}
+    {% for funding in sorted_fundings %}
+      {% include fundings.liquid %}
     {% endfor %}
   </div>
   {% endif %}
@@ -41,7 +41,7 @@ horizontal: true
 
 <!-- Display fundings without categories -->
 
-{% assign sorted_fundings = site.funding | sort: "importance" %}
+{% assign sorted_fundings = site.funding | sort: "start_date" | reverse %}
 
   <!-- Generate cards for each funding -->
 
@@ -49,15 +49,15 @@ horizontal: true
 
   <div class="container">
     <div class="row row-cols-1 row-cols-md-2">
-    {% for project in sorted_fundings %}
-      {% include projects_horizontal.liquid %}
+    {% for funding in sorted_fundings %}
+      {% include fundings_horizontal.liquid %}
     {% endfor %}
     </div>
   </div>
   {% else %}
   <div class="row row-cols-1 row-cols-md-3">
-    {% for project in sorted_fundings %}
-      {% include projects.liquid %}
+    {% for funding in sorted_fundings %}
+      {% include fundings.liquid %}
     {% endfor %}
   </div>
   {% endif %}
