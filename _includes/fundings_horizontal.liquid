@@ -10,9 +10,9 @@
         <div class="{% if funding.img %}col-md-6{% else %}col-md-12{% endif %}">
           <div class="card-body">
             <h3 class="card-title">{{ funding.title }}</h3>
-            <p class="card-text">
-              <i>{{ funding.description }}</i>
-            </p>
+            {% if funding.subtitle %}
+              <p class="card-subtitle">{{ funding.subtitle }}</p>
+            {% endif %}
             <p class="card-text">
               {{ funding.funder }}
               <br>

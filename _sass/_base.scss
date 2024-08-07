@@ -27,6 +27,7 @@ table {
   td,
   th {
     font-size: 1rem;
+    color: var(--global-text-color);
   }
 
   th {
@@ -166,6 +167,16 @@ ul.task-list input[type="checkbox"] {
 
   .card-title {
     color: var(--global-text-color);
+  }
+
+  .card-subtitle {
+    color: var(--global-text-color);
+    margin-bottom: 0.75rem;
+    font-size: 1.125rem;
+  }
+
+  :nth-last-child(1 of .card-text) {
+    margin-bottom: 0;
   }
 
   .card-body {
@@ -612,7 +623,8 @@ footer.sticky-bottom {
     text-decoration: none;
 
     &:hover {
-      .card-title {
+      .card-title,
+      .card-subtitle {
         color: var(--global-theme-color);
       }
     }

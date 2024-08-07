@@ -226,7 +226,7 @@
         "author":
         {
             "@type": "Person",
-            "name": "{{ author_name }}"
+            "name": "{{ capitalized_author_name }}"
         },
         "url": "{{ page.url | prepend: site.baseurl | prepend: site.url }}",
         "@type": "{% if is_blog_post %}BlogPosting{% else %}WebSite{% endif %}",
@@ -235,7 +235,7 @@
         {% if sameaslinks != blank %}
         "sameAs": {{ sameaslinks }},
         {% endif %}
-        "name": "{{ author_name }}",
+        "name": "{{ capitalized_author_name }}",
         "@context": "https://schema.org"
     }
   </script>

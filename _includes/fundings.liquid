@@ -13,9 +13,9 @@
       {% endif %}
       <div class="card-body">
         <h2 class="card-title">{{ funding.title }}</h2>
-        <p class="card-text">
-          <i>{{ funding.description }}</i>
-        </p>
+        {% if funding.subtitle %}
+          <p class="card-subtitle">{{ funding.subtitle }}</p>
+        {% endif %}
         <p class="card-text">
           {{ funding.funder }}
           <br>

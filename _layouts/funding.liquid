@@ -3,8 +3,54 @@ layout: default
 ---
 <div class="post">
   <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
+    <h1 class="post-title">
+      <span class="font-weight-bold">{{ page.title }}</span>
+      {%- if page.subtitle %} | {{ page.subtitle }}{% endif %}
+    </h1>
     <p class="post-description">{{ page.description }}</p>
+    <ul class="post-tags fa-ul">
+      {% if page.funder %}
+        <li>
+          <span class="fa-li"><i class="fa-solid fa-landmark fa-sm"></i></span><strong>Funded by:</strong>
+          {% if page.funder_link -%}
+            <a href="{{page.funder_link}}">{{ page.funder }}</a>
+          {%- else -%}
+            {{- page.funder -}}
+          {%- endif %}
+        </li>
+      {% endif %}
+      {% if page.partners %}
+        <li>
+          <span class="fa-li"><i class="fa-solid fa-users fa-sm"></i></span><strong>Partners:</strong> {{ page.partners }}
+        </li>
+      {% endif %}
+      {% if page.my_role %}
+        <li>
+          <span class="fa-li"><i class="fa-solid fa-user fa-sm"></i></span><strong>Role:</strong> {{ page.my_role }}
+        </li>
+      {% endif %}
+      {% if page.budget %}
+        <li>
+          <span class="fa-li"><i class="fa-solid fa-coins fa-sm"></i></span><strong>Budget:</strong> {{ page.budget }}
+        </li>
+      {% endif %}
+      {% if page.start_date %}
+        <li>
+          <span class="fa-li"><i class="fa-solid fa-calendar fa-sm"></i></span><strong>Period:</strong> {{ page.start_date | date: '%b %Y' }}–
+          {%- if page.end_date %}{{ page.end_date | date: '%b %Y' }}{% else %}now{% endif %}
+        </li>
+      {% endif %}
+      {% if page.website %}
+        <li>
+          <span class="fa-li"><i class="fa-solid fa-link fa-sm"></i></span><a href="{{ page.website }}">Project website</a>
+        </li>
+      {% endif %}
+      {% if page.decision_link %}
+        <li>
+          <span class="fa-li"><i class="fa-solid fa-link fa-sm"></i></span><a href="{{ page.decision_link }}">Funding decision</a>
+        </li>
+      {% endif %}
+    </ul>
   </header>
 
   <article>

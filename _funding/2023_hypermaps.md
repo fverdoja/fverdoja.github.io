@@ -1,13 +1,17 @@
 ---
 layout: funding
 title: Hypermaps
-description: Closing the complexity gap in robotic mapping
+subtitle: Closing the complexity gap in robotic mapping
 funder: National Reseach Council of Finland
+funder_link: https://www.aka.fi/en/
 start_date: 2023-09-01
 end_date: 2027-08-31
-category: current
-related_publications: true
-publication_key: hypermaps
+my_role: Principal investigator
+budget: 834k€
+decision_link: https://research.fi/en/results/funding/78102
+description: >
+  4-year research fellowship on multi-layer and semantic spatial representations
+  for robotics
 abstract: >
   Hypermaps improves how robots manage data about the environment they inhabit.
   The most common way for robots to handle environmental information is by using
@@ -23,12 +27,7 @@ abstract: >
   research will be conducted in Aalto University, in collaboration with
   University of Bonn, Technical University of Munich, KONE ltd, and GIM
   Robotics.
+category: current
+related_publications: true
+publication_key: hypermaps
 ---
-
-4-year research fellowship on multi-layer and semantic spatial representations
-for robotics.
-
-- **Role:** Principal investigator
-- **Budget:** 834k€
-- **Funding period:** 09.2023--08.2027
-- **Links:** [Funding decision](https://research.fi/en/results/funding/78102)
