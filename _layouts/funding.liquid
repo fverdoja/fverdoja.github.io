@@ -57,7 +57,7 @@ layout: default
     {{ content }}
 
     {% if page.abstract %}
-      <h2 id="abstract">Abstract</h2>
+      <h2 id="abstract">abstract</h2>
 
       {% assign paragraphs = page.abstract | newline_to_br | strip_newlines | split: '<br />' %}
       {% for paragraph in paragraphs %}
@@ -67,7 +67,7 @@ layout: default
   </article>
 
   {% if page.related_publications %}
-    <h2 id="related-publications">Related publications</h2>
+    <h2 id="related-publications">related publications</h2>
     <div class="publications">
       {% bibliography --query @*[funding~={{page.publication_key}}] --group_by type --group_order ascending %}
     </div>
