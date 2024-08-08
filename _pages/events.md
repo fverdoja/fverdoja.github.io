@@ -18,20 +18,20 @@ horizontal: false
     <h2 class="category">{{ category }}</h2>
   </a>
   {% assign categorized_events = site.events | where: "category", category %}
-  {% assign sorted_events = categorized_events | sort: "importance" %}
+  {% assign sorted_events = categorized_events | sort: "start_date" | reverse %}
   <!-- Generate cards for each event -->
   {% if page.horizontal %}
   <div class="container">
     <div class="row row-cols-1 row-cols-md-2">
-    {% for project in sorted_events %}
-      {% include projects_horizontal.liquid %}
+    {% for event in sorted_events %}
+      {% include events_horizontal.liquid %}
     {% endfor %}
     </div>
   </div>
   {% else %}
   <div class="row row-cols-1 row-cols-md-3">
-    {% for project in sorted_events %}
-      {% include projects.liquid %}
+    {% for event in sorted_events %}
+      {% include events.liquid %}
     {% endfor %}
   </div>
   {% endif %}
@@ -41,7 +41,7 @@ horizontal: false
 
 <!-- Display events without categories -->
 
-{% assign sorted_events = site.events | sort: "importance" %}
+{% assign sorted_events = site.events | sort: "start_date" | reverse %}
 
   <!-- Generate cards for each event -->
 
@@ -49,15 +49,15 @@ horizontal: false
 
   <div class="container">
     <div class="row row-cols-1 row-cols-md-2">
-    {% for project in sorted_events %}
-      {% include projects_horizontal.liquid %}
+    {% for event in sorted_events %}
+      {% include events_horizontal.liquid %}
     {% endfor %}
     </div>
   </div>
   {% else %}
   <div class="row row-cols-1 row-cols-md-3">
-    {% for project in sorted_events %}
-      {% include projects.liquid %}
+    {% for event in sorted_events %}
+      {% include events.liquid %}
     {% endfor %}
   </div>
   {% endif %}
