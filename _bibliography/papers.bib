@@ -542,7 +542,7 @@
                  when dealing with complex or unknown objects.},
   arxiv       = {1903.00645},
   pdf         = {https://arxiv.org/pdf/1903.00645},
-  code        = {https://github.com/aalto-intelligent-robotics/shape_completion_network},
+  code        = {https://github.com/aalto-intelligent-robotics/robust_grasp_planning_over_uncertain_shape_completions},
   abbr        = {IROS},
   preview     = {iros_19.jpg}
 }
@@ -573,6 +573,7 @@
                  synthetic and real anomalies, prove the proposed technique is
                  able to obtain significant gains over performance by other
                  algorithms in the state of the art.},
+  arxiv       = {1802.09843},
   pdf         = {https://link.springer.com/content/pdf/10.1007/s00138-020-01059-4.pdf},
   code        = {https://github.com/fverdoja/LAD-Laplacian-Anomaly-Detector},
   abbr        = {MVAP},
@@ -688,6 +689,7 @@
                  mapping.},
   arxiv       = {1909.09526},
   pdf         = {https://arxiv.org/pdf/1909.09526},
+  video       = {https://www.youtube.com/watch?v=mdxpBlK4qjk},
   code        = {https://github.com/Eruvae/hypermap},
   abbr        = {MFI},
   preview     = {mfi_20.png}
@@ -767,7 +769,29 @@
   month       = apr,
   year        = {2021},
   pages       = {2838--2845},
-  funding     = {rose}
+  funding     = {rose},
+  abstract    = {Accurately modeling local surface properties of objects is 
+                 crucial to many robotic applications, from grasping to material
+                 recognition. Surface properties like friction are however
+                 difficult to estimate, as visual observation of the object does
+                 not convey enough information over these properties. In
+                 contrast, haptic exploration is time consuming as it only
+                 provides information relevant to the explored parts of the
+                 object. In this work, we propose a joint visuo-haptic object
+                 model that enables the estimation of surface friction
+                 coefficient over an entire object by exploiting the correlation
+                 of visual and haptic information, together with a limited
+                 haptic exploration by a robotic arm. We demonstrate the
+                 validity of the proposed method by showing its ability to
+                 estimate varying friction coefficients on a range of real
+                 multi-material objects. Furthermore, we illustrate how the
+                 estimated friction coefficients can improve grasping success
+                 rate by guiding a grasp planner toward high friction areas.},
+  arxiv       = {2010.08277},
+  pdf         = {https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9364673},
+  video       = {https://www.youtube.com/watch?v=OXXGk5Byu3g},
+  abbr        = {RA-L},
+  preview     = {ral_1_21.jpg}
 }
 
 @inproceedings{202105_lundell_multi-fingan,
@@ -784,7 +808,34 @@
   month       = may,
   year        = {2021},
   pages       = {4495--4501},
-  funding     = {rose}
+  funding     = {rose},
+  abstract    = {While there exists many methods for manipulating rigid objects 
+                 with parallel-jaw grippers, grasping with multi-finger robotic
+                 hands remains a quite unexplored research topic. Reasoning and
+                 planning collision-free trajectories on the additional degrees
+                 of freedom of several fingers represents an important challenge
+                 that, so far, involves computationally costly and slow
+                 processes. In this work, we present Multi-FinGAN, a fast
+                 generative multi-finger grasp sampling method that synthesizes
+                 high quality grasps directly from RGB-D images in about a
+                 second. We achieve this by training in an end-to-end fashion a
+                 coarse-to-fine model composed of a classification network that
+                 distinguishes grasp types according to a specific taxonomy and
+                 a refinement network that produces refined grasp poses and
+                 joint angles. We experimentally validate and benchmark our
+                 method against a standard grasp-sampling method on 790 grasps
+                 in simulation and 20 grasps on a real Franka Emika Panda. All
+                 experimental results using our method show consistent
+                 improvements both in terms of grasp quality metrics and grasp
+                 success rate. Remarkably, our approach is up to 20-30 times
+                 faster than the baseline, a significant improvement that opens
+                 the door to feedback-based grasp re-planning and task
+                 informative grasping. Code is available at this https URL.},
+  arxiv       = {2012.09696},
+  pdf         = {https://arxiv.org/pdf/2012.09696},
+  code        = {https://github.com/aalto-intelligent-robotics/Multi-FinGAN},
+  abbr        = {ICRA},
+  preview     = {icra_21.png}
 }
 
 @online{202107_verdoja_notes,
@@ -797,7 +848,23 @@
   note        = {Presented at the ``Uncertainty and Robustness in Deep
                  Learning (UDL)'' workshop at the 2021 Int.\ Conf.\ on Machine 
                  Learning (ICML)},
-  funding     = {rose}
+  funding     = {rose},
+  abstract    = {Among the various options to estimate uncertainty in deep 
+                 neural networks, Monte-Carlo dropout is widely popular for its
+                 simplicity and effectiveness. However the quality of the
+                 uncertainty estimated through this method varies and choices in
+                 architecture design and in training procedures have to be
+                 carefully considered and tested to obtain satisfactory results.
+                 In this paper we present a study offering a different point of
+                 view on the behavior of Monte-Carlo dropout, which enables us
+                 to observe a few interesting properties of the technique to
+                 keep in mind when considering its use for uncertainty
+                 estimation.},
+  arxiv       = {2008.02627},
+  pdf         = {https://arxiv.org/pdf/2008.02627},
+  code        = {https://github.com/aalto-intelligent-robotics/mc-dropout-notebooks},
+  abbr        = {ICML},
+  preview     = {icml_21.png}
 }
 
 @inproceedings{202108_dengler_online,
@@ -810,7 +877,32 @@
                  Bennewitz, Maren},
   month       = aug,
   year        = {2021},
-  funding     = {rose}
+  funding     = {rose},
+  abstract    = {Creating and maintaining an accurate representation of the 
+                 environment is an essential capability for every service robot.
+                 Especially for household robots acting in indoor environments,
+                 semantic information is important. In this paper, we present a
+                 semantic mapping framework with modular map representations.
+                 Our system is capable of online mapping and object updating
+                 given object detections from RGB-D data and provides various 2D
+                 and 3D~representations of the mapped objects. To undo wrong
+                 data associations, we perform a refinement step when updating
+                 object shapes. Furthermore, we maintain an existence likelihood
+                 for each object to deal with false positive and false negative
+                 detections and keep the map updated. Our mapping system is
+                 highly efficient and achieves a run time of more than 10 Hz. We
+                 evaluated our approach in various environments using two
+                 different robots, i.e., a Toyota HSR and a Fraunhofer
+                 Care-O-Bot-4. As the experimental results demonstrate, our
+                 system is able to generate maps that are close to the ground
+                 truth and outperforms an existing approach in terms of
+                 intersection over union, different distance metrics, and the
+                 number of correct object mappings.},
+  arxiv       = {2011.06895},
+  pdf         = {https://arxiv.org/pdf/2011.06895},
+  code        = {https://github.com/NilsDengler/sem_mapping},
+  abbr        = {ECMR},
+  preview     = {ecmr_21.png}
 }
 
 @article{202110_lundell_ddgc,
@@ -826,7 +918,33 @@
   month       = oct,
   year        = {2021},
   pages       = {6899--6906},
-  funding     = {rose}
+  funding     = {rose},
+  abstract    = {Recent advances in multi-fingered robotic grasping have enabled
+                 fast 6-Degrees-Of-Freedom (DOF) single object grasping.
+                 Multi-finger grasping in cluttered scenes, on the other hand,
+                 remains mostly unexplored due to the added difficulty of
+                 reasoning over obstacles which greatly increases the
+                 computational time to generate high-quality collision-free
+                 grasps. In this work we address such limitations by introducing
+                 DDGC, a fast generative multi-finger grasp sampling method that
+                 can generate high quality grasps in cluttered scenes from a
+                 single RGB-D image. DDGC is built as a network that encodes
+                 scene information to produce coarse-to-fine collision-free
+                 grasp poses and configurations. We experimentally benchmark
+                 DDGC against the simulated-annealing planner in GraspIt! on
+                 1200 simulated cluttered scenes and 7 real world scenes. The
+                 results show that DDGC outperforms the baseline on synthesizing
+                 high-quality grasps and removing clutter while being 5 times
+                 faster. This, in turn, opens up the door for using multi-finger
+                 grasps in practical applications which has so far been limited
+                 due to the excessive computation time needed by other
+                 methods.},
+  arxiv       = {2103.04783},
+  pdf         = {https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9483683},
+  video       = {https://www.youtube.com/watch?v=bKjBVwDBYvg},
+  code        = {https://github.com/aalto-intelligent-robotics/DDGC},
+  abbr        = {RA-L},
+  preview     = {ral_2_21.png}
 }
 
 @inproceedings{202112_kinnari_gnss-denied,
@@ -839,7 +957,31 @@
   month       = dec,
   year        = {2021},
   pages       = {555--562},
-  funding     = {saab}
+  funding     = {saab},
+  abstract    = {Localization of low-cost Unmanned Aerial Vehicles (UAVs) often
+                 relies on Global Navigation Satellite Systems (GNSS). GNSS are
+                 susceptible to both natural disruptions to radio signal and
+                 intentional jamming and spoofing by an adversary. A typical way
+                 to provide georeferenced localization without GNSS for small
+                 UAVs is to have a downward-facing camera and match camera
+                 images to a map. The downward-facing camera adds cost, size,
+                 and weight to the UAV platform and the orientation limits its
+                 usability for other purposes. In this work, we propose a
+                 Monte-Carlo localization method for georeferenced localization
+                 of an UAV requiring no infrastructure using only inertial
+                 measurements, a camera facing an arbitrary direction, and an
+                 orthoimage map. We perform orthorectification of the UAV image,
+                 relying on a local planarity assumption of the environment,
+                 relaxing the requirement of downward-pointing camera. We
+                 propose a measure of goodness for the matching score of an
+                 orthorectified UAV image and a map. We demonstrate that the
+                 system is able to localize globally an UAV with modest
+                 requirements for initialization and map resolution.},
+  arxiv       = {2103.14381},
+  pdf         = {https://arxiv.org/pdf/2103.14381},
+  abbr        = {ICAR},
+  preview     = {icar_21.png}
+
 }
 
 @inproceedings{202208_sivananda_augmented,
@@ -853,21 +995,73 @@
                  Ville},
   month       = aug,
   year        = {2022},
-  pages       = {1123--1130}
+  pages       = {1123--1130},
+  abstract    = {While 2D occupancy maps commonly used in mobile robotics enable
+                 safe navigation in indoor environments, in order for robots to
+                 understand and interact with their environment and its
+                 inhabitants representing 3D geometry and semantic environment
+                 information is required. Semantic information is crucial in
+                 effective interpretation of the meanings humans attribute to
+                 different parts of a space, while 3D geometry is important for
+                 safety and high-level understanding. We propose a pipeline that
+                 can generate a multi-layer representation of indoor
+                 environments for robotic applications. The proposed
+                 representation includes 3D metric-semantic layers, a 2D
+                 occupancy layer, and an object instance layer where known
+                 objects are replaced with an approximate model obtained through
+                 a novel model-matching approach. The metric-semantic layer and
+                 the object instance layer are combined to form an augmented
+                 representation of the environment. Experiments show that the
+                 proposed shape matching method outperforms a state-of-the-art
+                 deep learning method when tasked to complete unseen parts of
+                 objects in the scene. The pipeline performance translates well
+                 from simulation to real world as shown by F1-score analysis,
+                 with semantic segmentation accuracy using Mask R-CNN acting as
+                 the major bottleneck. Finally, we also demonstrate on a real
+                 robotic platform how the multi-layer map can be used to improve
+                 navigation safety.},
+  arxiv       = {2103.07298},
+  pdf         = {https://arxiv.org/pdf/2103.07298},
+  abbr        = {RO-MAN},
+  preview     = {roman_22.jpg}
 }
 
-@online{202208_verdoja_generating,
+@online{202210_verdoja_generating,
   bibtex_show = {true},
   title       = {Generating people flow from architecture of real unseen 
                  environments},
   url         = {https://iros2022-pnarude.github.io},
   author      = {Verdoja, Francesco and Kucner, Tomasz Piotr and Kyrki, Ville},
-  month       = aug,
+  month       = oct,
   year        = {2022},
-  note        = {Presented at the ``Perception and Navigation for Autonomous Robotics
-                 in Unstructured and Dynamic Environments (PNARUDE)'' workshop at the
-                 IEEE/RSJ Int.\ Conf.\ on Intelligent Robots and Systems (IROS)},
-  funding     = {santtu}
+  note        = {Presented at the ``Perception and Navigation for Autonomous 
+                 Robotics in Unstructured and Dynamic Environments (PNARUDE)''
+                 workshop at the IEEE/RSJ Int.\ Conf.\ on Intelligent Robots and
+                 Systems (IROS)},
+  funding     = {santtu},
+  abstract    = {Recent advances in multi-fingered robotic grasping have enabled
+                 fast 6-Degrees-Of-Freedom (DOF) single object grasping.
+                 Multi-finger grasping in cluttered scenes, on the other hand,
+                 remains mostly unexplored due to the added difficulty of
+                 reasoning over obstacles which greatly increases the
+                 computational time to generate high-quality collision-free
+                 grasps. In this work we address such limitations by introducing
+                 DDGC, a fast generative multi-finger grasp sampling method that
+                 can generate high quality grasps in cluttered scenes from a
+                 single RGB-D image. DDGC is built as a network that encodes
+                 scene information to produce coarse-to-fine collision-free
+                 grasp poses and configurations. We experimentally benchmark
+                 DDGC against the simulated-annealing planner in GraspIt! on
+                 1200 simulated cluttered scenes and 7 real world scenes. The
+                 results show that DDGC outperforms the baseline on synthesizing
+                 high-quality grasps and removing clutter while being 5 times
+                 faster. This, in turn, opens up the door for using multi-finger
+                 grasps in practical applications which has so far been limited
+                 due to the excessive computation time needed by other
+                 methods.},
+  pdf         = {https://iros2022-pnarude.github.io/pdf/PNARUDE_IROS2022_Francesco_Verdoja_Generating_people_flow_from_architecture_of_real_unseen_environments.pdf},
+  abbr        = {IROS},
+  preview     = {iros_22.png}
 }
 
 @article{202210_kinnari_season-invariant,
@@ -882,10 +1076,32 @@
   month       = oct,
   year        = {2022},
   pages       = {10232--10239},
-  code        = {https://github.com/aalto-intelligent-robotics/sivl},
   award       = {Awarded by the IEEE Finland CSS/RAS/SMCS Joint Chapter},
   award_name  = {2023 Best Paper Award},
-  funding     = {saab}
+  funding     = {saab},
+  abstract    = {Localization without Global Navigation Satellite Systems (GNSS)
+                 is a critical functionality in autonomous operations of
+                 unmanned aerial vehicles (UAVs). Vision-based localization on a
+                 known map can be an effective solution, but it is burdened by
+                 two main problems: places have different appearance depending
+                 on weather and season, and the perspective discrepancy between
+                 the UAV camera image and the map make matching hard. In this
+                 work, we propose a localization solution relying on matching of
+                 UAV camera images to georeferenced orthophotos with a trained
+                 convolutional neural network model that is invariant to
+                 significant seasonal appearance difference (winter-summer)
+                 between the camera image and map. We compare the convergence
+                 speed and localization accuracy of our solution to six
+                 reference methods. The results show major improvements with
+                 respect to reference methods, especially under high seasonal
+                 variation. We finally demonstrate the ability of the method to
+                 successfully localize a real UAV, showing that the proposed
+                 method is robust to perspective changes.},
+  arxiv       = {2110.01967},
+  pdf         = {https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9830867},
+  code        = {https://github.com/aalto-intelligent-robotics/sivl},
+  abbr        = {RA-L},
+  preview     = {ral_22.png}
 }
 
 @article{202309_kucner_survey,
@@ -902,7 +1118,31 @@
   month       = sep,
   year        = {2023},
   pages       = {977--1006},
-  funding     = {santtu}
+  funding     = {santtu},
+  abstract    = {Robotic mapping provides spatial information for autonomous 
+                 agents. Depending on the tasks they seek to enable, the maps
+                 created range from simple 2D representations of the environment
+                 geometry to complex, multilayered semantic maps. This survey
+                 article is about maps of dynamics (MoDs), which store semantic
+                 information about typical motion patterns in a given
+                 environment. Some MoDs use trajectories as input, and some can
+                 be built from short, disconnected observations of motion.
+                 Robots can use MoDs, for example, for global motion planning,
+                 improved localization, or human motion prediction. Accounting
+                 for the increasing importance of maps of dynamics, we present a
+                 comprehensive survey that organizes the knowledge accumulated
+                 in the field and identifies promising directions for future
+                 work. Specifically, we introduce field-specific vocabulary,
+                 summarize existing work according to a novel taxonomy, and
+                 describe possible applications and open research problems. We
+                 conclude that the field is mature enough, and we expect that
+                 maps of dynamics will be increasingly used to improve robot
+                 performance in real-world use cases. At the same time, the
+                 field is still in a phase of rapid development where novel
+                 contributions could significantly impact this research area.},
+  pdf         = {https://journals.sagepub.com/doi/epub/10.1177/02783649231190428},
+  abbr        = {IJRR},
+  preview     = {ijrr_23.png}
 }
 
 @article{202310_kinnari_lsvl,
@@ -916,8 +1156,39 @@
                  Kyrki, Ville},
   month       = oct,
   year        = {2023},
+  funding     = {saab},
+  abstract    = {Localization of autonomous unmanned aerial vehicles (UAVs) 
+                 relies heavily on Global Navigation Satellite Systems (GNSS),
+                 which are susceptible to interference. Especially in security
+                 applications, robust localization algorithms independent of
+                 GNSS are needed to provide dependable operations of autonomous
+                 UAVs also in interfered conditions. Typical non-GNSS visual
+                 localization approaches rely on known starting pose, work only
+                 on a small-sized map, or require known flight paths before a
+                 mission starts. We consider the problem of localization with no
+                 information on initial pose or planned flight path. We propose
+                 a solution for global visual localization on a map at scale up
+                 to 100 km2, based on matching orthoprojected UAV images to
+                 satellite imagery using learned season-invariant descriptors.
+                 We show that the method is able to determine heading, latitude
+                 and longitude of the UAV at 12.6-18.7 m lateral translation
+                 error in as few as 23.2-44.4 updates from an uninformed
+                 initialization, also in situations of significant seasonal
+                 appearance difference (winter-summer) between the UAV image and
+                 the map. We evaluate the characteristics of multiple neural
+                 network architectures for generating the descriptors, and
+                 likelihood estimation methods that are able to provide fast
+                 convergence and low localization error. We also evaluate the
+                 operation of the algorithm using real UAV data and evaluate
+                 running time on a real-time embedded platform. We believe this
+                 is the first work that is able to recover the pose of an UAV at
+                 this scale and rate of convergence, while allowing significant
+                 seasonal difference between camera observations and map.},
+  arxiv       = {2212.03581},
+  pdf         = {https://www.sciencedirect.com/science/article/pii/S0921889023001367/pdfft?md5=f9adcc28337beda3aed23294f5cb5615&pid=1-s2.0-S0921889023001367-main.pdf},
   video       = {https://ars.els-cdn.com/content/image/1-s2.0-S0921889023001367-mmc1.mp4},
-  funding     = {saab}
+  abbr        = {RAS},
+  preview     = {ras_23.jpg}
 }
 
 @inproceedings{202310_lundell_constrained,
@@ -931,7 +1202,31 @@
   month       = oct,
   year        = {2023},
   pages       = {2940--2946},
-  code        = {https://github.com/jsll/position-contrained-6dof-graspnet}
+  abstract    = {Most state-of-the-art data-driven grasp sampling methods 
+                 propose stable and collision-free grasps uniformly on the
+                 target object. For bin-picking, executing any of those
+                 reachable grasps is sufficient. However, for completing
+                 specific tasks, such as squeezing out liquid from a bottle, we
+                 want the grasp to be on a specific part of the object's body
+                 while avoiding other locations, such as the cap. This work
+                 presents a generative grasp sampling network, VCGS, capable of
+                 constrained 6 Degrees of Freedom (DoF) grasp sampling. In
+                 addition, we also curate a new dataset designed to train and
+                 evaluate methods for constrained grasping. The new dataset,
+                 called CONG, consists of over 14 million training samples of
+                 synthetically rendered point clouds and grasps at random target
+                 areas on 2889 objects. VCGS is benchmarked against GraspNet, a
+                 state-of-the-art unconstrained grasp sampler, in simulation and
+                 on a real robot. The results demonstrate that VCGS achieves a
+                 10-15% higher grasp success rate than the baseline while being
+                 2-3 times as sample efficient. Supplementary material is
+                 available on our project website.},
+  arxiv       = {2302.10745},
+  pdf         = {https://arxiv.org/pdf/2302.10745},
+  video       = {https://www.youtube.com/watch?v=kTZD6cxTtv8},
+  code        = {https://github.com/jsll/position-contrained-6dof-graspnet},
+  abbr        = {IROS},
+  preview     = {iros_23.jpg}
 }
 
 @online{202405_chaubey_jointly,
@@ -946,7 +1241,29 @@
                  Control, and Robot Learning for Physical Human-Robot Interaction 
                  (pHRI)'' workshop at the IEEE Int.\ Conf.\ on Robotics and 
                  Automation (ICRA)},
-  funding     = {santtu}
+  funding     = {santtu},
+  abstract    = {Learning from Demonstration (LfD) allows robots to mimic human 
+                 actions. However, these methods do not model constraints
+                 crucial to ensure safety of the learned skill. Moreover, even
+                 when explicitly modelling constraints, they rely on the
+                 assumption of a known cost function, which limits their
+                 practical usability for task with unknown cost. In this work we
+                 propose a two-step optimization process that allow to estimate
+                 cost and constraints by decoupling the learning of cost
+                 functions from the identification of unknown constraints within
+                 the demonstrated trajectories. Initially, we identify the cost
+                 function by isolating the effect of constraints on parts of the
+                 demonstrations. Subsequently, a constraint leaning method is
+                 used to identify the unknown constraints. Our approach is
+                 validated both on simulated trajectories and a real robotic
+                 manipulation task. Our experiments show the impact that
+                 incorrect cost estimation has on the learned constraints and
+                 illustrate how the proposed method is able to infer unknown
+                 constraints, such as obstacles, from demonstrated trajectories
+                 without any initial knowledge of the cost.},
+  pdf         = {https://drive.google.com/file/d/1DZcfnhbppEWc_fM9rWBgJyVI65q5ythz/view},
+  abbr        = {ICRA},
+  preview     = {icra_1_24.png}
 }
 
 @online{202405_pekkanen_evaluating,
@@ -960,7 +1277,27 @@
   note        = {Presented at the ``Vision-Language Models for Navigation and 
                  Manipulation (VLMNM)'' workshop at the IEEE Int.\ Conf.\ on 
                  Robotics and Automation (ICRA)},
-  funding     = {hypermaps, santtu}
+  funding     = {hypermaps, santtu},
+  abstract    = {Visual-language models (VLMs) have recently been introduced in
+                 robotic mapping by using the latent representations, i.e.,
+                 embeddings, of the VLMs to represent the natural language
+                 semantics in the map. The main benefit is moving beyond a small
+                 set of human-created labels toward open-vocabulary scene
+                 understanding. While there is anecdotal evidence that maps
+                 built this way support downstream tasks, such as navigation,
+                 rigorous analysis of the quality of the maps using these
+                 embeddings is lacking. In this paper, we propose a way to
+                 analyze the quality of maps created using VLMs by evaluating
+                 two critical properties: queryability and consistency. We
+                 demonstrate the proposed method by evaluating the maps created
+                 by two state-of-the-art methods, VLMaps and OpenScene, using
+                 two encoders, LSeg and OpenSeg, using real-world data from the
+                 Matterport3D data set. We find that OpenScene outperforms
+                 VLMaps with both encoders, and LSeg outperforms OpenSeg with
+                 both methods.},
+  pdf         = {https://openreview.net/pdf?id=FspmwJHZ2G},
+  abbr        = {ICRA},
+  preview     = {icra_2_24.png}
 }
 
 @online{202405_pekkanen_modeling,
@@ -974,7 +1311,27 @@
   note        = {Presented at the ``Future of Construction: Lifelong Learning Robots 
                  in Changing Construction Sites'' workshop at the IEEE Int.\ Conf.\ 
                  on Robotics and Automation (ICRA)},
-  funding     = {santtu}
+  funding     = {santtu},
+  abstract    = {Most state-of-the-art robotic maps assume a static world; 
+                 therefore, dynamic objects are filtered out of the
+                 measurements. However, this division ignores movable but non-
+                 moving, i.e., semi-static objects, which are usually recorded
+                 in the map and treated as static objects, violating the static
+                 world assumption and causing errors in the localization. This
+                 paper presents a method for modeling moving and movable objects
+                 to match the map and measurements consistently. This reduces
+                 the error resulting from inconsistent categorization and
+                 treatment of non-static measurements. A semantic segmentation
+                 network is used to categorize the measurements into static and
+                 semi- static classes, and a background subtraction-based
+                 filtering method is used to remove dynamic measurements.
+                 Experimental comparison against a state-of-the-art baseline
+                 solution using real-world data from the Oxford Radar RobotCar
+                 data set shows that consistent assumptions over dynamics
+                 increase localization accuracy.},
+  pdf         = {https://construction-robots.github.io/papers/49.pdf},
+  abbr        = {ICRA},
+  preview     = {icra_3_24.png}
 }
 
 @online{202405_verdoja_using,
@@ -986,7 +1343,32 @@
   year        = {2024},
   note        = {Presented at the ``Long-term Human Motion Prediction'' workshop at 
                  the IEEE Int.\ Conf.\ on Robotics and Automation (ICRA)},
-  funding     = {hypermaps}
+  funding     = {hypermaps},
+  abstract    = {Mapping people dynamics is a crucial skill for robots, because 
+                 it enables them to coexist in human-inhabited environments.
+                 However, learning a model of people dynamics is a time
+                 consuming process which requires observation of large amount of
+                 people moving in an environment. Moreover, approaches for
+                 mapping dynamics are unable to transfer the learned models
+                 across environments: each model is only able to describe the
+                 dynamics of the environment it has been built in. However, the
+                 impact of architectural geometry on people's movement can be
+                 used to anticipate their patterns of dynamics, and recent work
+                 has looked into learning maps of dynamics from occupancy. So
+                 far however, approaches based on trajectories and those based
+                 on geometry have not been combined. In this work we propose a
+                 novel Bayesian approach to learn people dynamics able to
+                 combine knowledge about the environment geometry with
+                 observations from human trajectories. An occupancy-based deep
+                 prior is used to build an initial transition model without
+                 requiring any observations of pedestrian; the model is then
+                 updated when observations become available using Bayesian
+                 inference. We demonstrate the ability of our model to increase
+                 data efficiency and to generalize across real large-scale
+                 environments, which is unprecedented for maps of dynamics.},
+  pdf         = {https://motionpredictionicra2024.github.io/proceedings/lhmp2024_id02.pdf},
+  abbr        = {ICRA},
+  preview     = {icra_4_24.jpg}
 }
 
 @inproceedings{202409_pekkanen_localization,
@@ -998,7 +1380,29 @@
   month       = sep,
   year        = {2024},
   note        = {accepted},
-  funding     = {santtu}
+  funding     = {santtu},
+  abstract    = {Accurate maps are a prerequisite for virtually all mobile robot
+                 tasks. Most state-of-the-art maps assume a static world;
+                 therefore, dynamic objects are filtered out of the
+                 measurements. However, this division ignores movable but non-
+                 moving—i.e., semi-static—objects, which are usually recorded in
+                 the map and treated as static objects, violating the static
+                 world assumption and causing errors in the localization. This
+                 paper presents a method for consistently modeling moving and
+                 movable objects to match the map and measurements. This reduces
+                 the error resulting from inconsistent categorization and
+                 treatment of non-static measurements. A semantic segmentation
+                 network is used to categorize the measurements into static and
+                 semi-static classes, and a background subtraction filter is
+                 used to remove dynamic measurements. Finally, we show that
+                 consis- tent assumptions over dynamics improve localization
+                 accuracy when compared against a state-of-the-art baseline
+                 solution using real-world data from the Oxford Radar RobotCar
+                 data set.},
+  arxiv       = {2305.16702},
+  pdf         = {https://arxiv.org/pdf/2305.16702},
+  abbr        = {MFI},
+  preview     = {mfi_2_24.png}
 }
 
 @inproceedings{202409_pekkanen_object,
@@ -1010,7 +1414,38 @@
   month       = sep,
   year        = {2024},
   note        = {accepted},
-  funding     = {santtu}
+  funding     = {santtu},
+  abstract    = {Grid maps, especially occupancy grid maps, are ubiquitous in 
+                 many mobile robot applications. To simplify the process of
+                 learning the map, grid maps subdivide the world into a grid of
+                 cells whose occupancies are independently estimated using
+                 measurements in the perceptual field of the particular cell.
+                 However, the world consists of objects that span multiple
+                 cells, which means that measurements falling onto a cell
+                 provide evidence of the occupancy of other cells belonging to
+                 the same object. Current models do not capture this correlation
+                 and, therefore, do not use object-level information for
+                 estimating the state of the environment. In this work, we
+                 present a way to generalize the update of grid maps, relaxing
+                 the assumption of independence. We propose modeling the
+                 relationship between the measurements and the occupancy of each
+                 cell as a set of latent variables and jointly estimate those
+                 variables and the posterior of the map. We propose a method to
+                 estimate the latent variables by clustering based on semantic
+                 labels and an extension to the Normal Distributions Transform
+                 Occupancy Map (NDT-OM) to facilitate the proposed map update
+                 method. We perform comprehensive map creation and localization
+                 ex- periments with real-world data sets and show that the
+                 proposed method creates better maps in highly dynamic
+                 environments compared to state-of-the-art methods. Finally, we
+                 demonstrate the ability of the proposed method to remove
+                 occluded objects from the map in a lifelong map update
+                 scenario.},
+  arxiv       = {2309.08324},
+  pdf         = {https://arxiv.org/pdf/2309.08324},
+  code        = {https://github.com/aalto-intelligent-robotics/lamide},
+  abbr        = {MFI},
+  preview     = {mfi_1_24.png}
 }
 
 @inproceedings{202410_chaubey_jointly,
@@ -1023,7 +1458,30 @@
   month       = oct,
   year        = {2024},
   note        = {accepted},
-  funding     = {santtu}
+  funding     = {santtu},
+  abstract    = {Learning from Demonstration allows robots to mimic human 
+                 actions. However, these methods do not model constraints
+                 crucial to ensure safety of the learned skill. Moreover, even
+                 when explicitly modelling constraints, they rely on the
+                 assumption of a known cost function, which limits their
+                 practical usability for task with unknown cost. In this work we
+                 propose a two-step optimization process that allow to estimate
+                 cost and constraints by decoupling the learning of cost
+                 functions from the identification of unknown constraints within
+                 the demonstrated trajectories. Initially, we identify the cost
+                 function by isolating the effect of constraints on parts of the
+                 demonstrations. Subsequently, a constraint leaning method is
+                 used to identify the unknown constraints. Our approach is
+                 validated both on simulated trajectories and a real robotic
+                 manipulation task. Our experiments show the impact that
+                 incorrect cost estimation has on the learned constraints and
+                 illustrate how the proposed method is able to infer unknown
+                 constraints, such as obstacles, from demonstrated trajectories
+                 without any initial knowledge of the cost.},
+  arxiv       = {2405.03491},
+  pdf         = {https://arxiv.org/pdf/2405.03491},
+  abbr        = {IROS},
+  preview     = {iros_2_24.png}
 }
 
 @inproceedings{202410_verdoja_bayesian,
@@ -1037,6 +1495,32 @@
   month       = oct,
   year        = {2024},
   note        = {accepted},
+  funding     = {hypermaps},
+  abstract    = {Mapping people dynamics is a crucial skill for robots, because
+                 it enables them to coexist in human-inhabited environments.
+                 However, learning a model of people dynamics is a time
+                 consuming process which requires observation of large amount of
+                 people moving in an environment. Moreover, approaches for
+                 mapping dynamics are unable to transfer the learned models
+                 across environments: each model is only able to describe the
+                 dynamics of the environment it has been built in. However, the
+                 impact of architectural geometry on people's movement can be
+                 used to anticipate their patterns of dynamics, and recent work
+                 has looked into learning maps of dynamics from occupancy. So
+                 far however, approaches based on trajectories and those based
+                 on geometry have not been combined. In this work we propose a
+                 novel Bayesian approach to learn people dynamics able to
+                 combine knowledge about the environment geometry with
+                 observations from human trajectories. An occupancy-based deep
+                 prior is used to build an initial transition model without
+                 requiring any observations of pedestrian; the model is then
+                 updated when observations become available using Bayesian
+                 inference. We demonstrate the ability of our model to increase
+                 data efficiency and to generalize across real large-scale
+                 environments, which is unprecedented for maps of dynamics.},
+  arxiv       = {2208.10851},
+  pdf         = {https://arxiv.org/pdf/2208.10851},
   code        = {https://github.com/aalto-intelligent-robotics/bayesianfloorfield},
-  funding     = {hypermaps}
+  abbr        = {IROS},
+  preview     = {iros_1_24.jpg}
 }
