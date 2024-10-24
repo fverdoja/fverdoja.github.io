@@ -14,22 +14,21 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Francesco Verdoja received his PhD in Computer Science from University of Turin,
-Italy in July 2017. During his PhD studies his research focused on graph-based
-image processing, with his work on tumor segmentation awarding him the "Best
-student award" at the International Computer Vision Summer School 2014
-(ICVSS14). Since September 2017 he joined the Intelligent Robotics group at
-Aalto University in Helsinki, Finland as postdoctoral researcher. At the same
-time, he was working part-time as AI scientist for the AI consultancy company
-SiloAI.
+Francesco Verdoja received his Ph.D. in Computer Science from University of
+Turin, Italy in July 2017. After graduation, he joined the Intelligent Robotics
+group at Aalto University in Helsinki, Finland, and worked part-time as AI
+scientist for the AI consultancy company Silo AI, now part of AMD.
 
-Currently, he works as staff scientist in robotics in Aalto University. He is
-the coordinator for the Aalto Robot Lab. His research focuses on robotic
+After receiving a personal Research Fellowship grant from the Research Council
+of Finland for the [Hypermaps](funding/2023_hypermaps/) project in 2023, he now
+works as academy research fellow in robotics at Aalto University. He also serves
+as coordinator for the Aalto Robot Lab. His research focuses on robotic
 perception and mapping with particular interest on increasing environment
 understanding by extracting semantic knowledge from spatial representations. His
-contributions include for example mapping complete occupancy of objects from
-partial sensor data and estimating people flow from architecture, as well as the
-formulation of the idea of hypermaps as next step beyond multi-layer mapping for
+contributions include for example graph-based approaches to image segmentation
+and compression, estimation of complete occupancy of objects from partial sensor
+data, mapping the relationship between people flow and architecture, as well as
+the formulation of hypermaps as next step beyond multi-layer mapping for
 robotics.
 
 Other achievements include three patents based on his research, the preparation
