@@ -2,7 +2,7 @@
 layout: post
 title: >
   I will be serving in the Equality, Diversity, and Inclusion group of my school
-date: 2024-11-26
+date: 2024-11-21
 inline: false
 related_posts: false
 ---
