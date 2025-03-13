@@ -339,7 +339,7 @@ scholar:
   order: descending, descending
   group_by: year, type
   group_order: descending, ascending
-  type_order: [thesis, article, incollection, inproceedings, online, patent, techreport]
+  type_order: [thesis, article, incollection, inproceedings, online, misc, patent, techreport]
   type_names:
     {
       thesis: theses,
@@ -347,9 +347,9 @@ scholar:
       incollection: book chapters,
       inproceedings: conference articles,
       online: workshop articles,
+      misc: preprints,
       patent: patents,
       techreport: technical reports,
-      misc: preprints,
     }
 
 # Display different badges withs stats for your publications

@@ -17,11 +17,11 @@ social: true # includes social icons at the bottom of the page
 Francesco Verdoja received his Ph.D. in Computer Science from University of
 Turin, Italy in July 2017. After graduation, he joined the Intelligent Robotics
 group at Aalto University in Helsinki, Finland, and worked part-time as AI
-scientist for the AI consultancy company Silo AI, now part of AMD.
+Scientist for AMD Silo AI.
 
 After receiving a personal Research Fellowship grant from the Research Council
 of Finland for the [Hypermaps]({{ "/funding/2023_hypermaps/" | relative_url }})
-project in 2023, he now works as academy research fellow in robotics at Aalto
+project in 2023, he now works as Academy Research Fellow in robotics at Aalto
 University. He also serves as coordinator for the Aalto Robot Lab. His research
 focuses on robotic perception and mapping with particular interest on increasing
 environment understanding by extracting semantic knowledge from spatial
