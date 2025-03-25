@@ -321,7 +321,7 @@ scholar:
   locale: en
 
   source: /_bibliography/
-  bibliography: papers.bib
+  bibliography: list_of_publications.bib
   bibliography_template: bib
   # Note: if you have latex math in your bibtex, the latex filter
   # preprocessing may conflict with MathJAX if the latter is enabled.
@@ -339,7 +339,7 @@ scholar:
   order: descending, descending
   group_by: year, type
   group_order: descending, ascending
-  type_order: [thesis, article, incollection, inproceedings, online, patent, techreport]
+  type_order: [thesis, article, incollection, inproceedings, online, misc, patent, techreport]
   type_names:
     {
       thesis: theses,
@@ -347,6 +347,7 @@ scholar:
       incollection: book chapters,
       inproceedings: conference articles,
       online: workshop articles,
+      misc: preprints,
       patent: patents,
       techreport: technical reports,
     }
