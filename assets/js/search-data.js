@@ -134,6 +134,11 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/250728_iros25/";
+            },},{id: "news-i-was-invited-to-give-a-guest-lecture-on-software-development-practices-at-tampere-university",
+          title: 'I was invited to give a guest lecture on software development practices at...',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/251010_guest_lecture_tampere/";
             },},{
         id: 'social-email',
         title: 'email',
