@@ -24,23 +24,29 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Francesco Verdoja received his Ph.D. in Computer Science from University of
-Turin, Italy in July 2017. After graduation, he joined the Intelligent Robotics
-group at Aalto University in Helsinki, Finland, and worked part-time as AI
-Scientist for AMD Silo AI.
+Francesco Verdoja received his Ph.D. in Computer Science from the University of
+Turin, Italy, in 2017, specializing in graph-based approaches to image
+processing. Following graduation, he joined the Intelligent Robotics group at
+Aalto University in Helsinki, Finland, where he focused on robotic perception
+and mapping. In addition to his academic role, Francesco worked part-time as a
+Senior AI Scientist at AMD Silo AI, contributing to computer vision and machine
+learning research and development.
 
-After receiving a personal Research Fellowship grant from the Research Council
-of Finland for the [Hypermaps]({{ "/funding/2023_hypermaps/" | relative_url }})
-project in 2023, he now works as Academy Research Fellow in robotics at Aalto
-University. He also serves as coordinator for the Aalto Robot Lab. His research
-focuses on robotic perception and mapping with particular interest on increasing
-environment understanding by extracting semantic knowledge from spatial
-representations. His contributions include for example graph-based approaches to
-image segmentation and compression, estimation of complete occupancy of objects
-from partial sensor data, mapping the relationship between people flow and
-architecture, as well as the formulation of hypermaps as next step beyond
-multi-layer mapping for robotics.
+Since 2023, he has held an Academy Research Fellow position, supported by a
+Research Fellowship grant from the Research Council of Finland for his project
+[Hypermaps]({{ "/funding/2023_hypermaps/" | relative_url }}), which aims to
+address the complexity gap in robotic mapping through unified spatial, semantic,
+and dynamic environment representations. At Aalto University, Francesco also
+serves as Staff Scientist and coordinates the Aalto Robot Lab. His research
+targets autonomous agents in physical spaces, with a focus on
+representation-centric approaches that enhance environment understanding,
+long-term operation, and uncertainty-aware decision-making.
 
-Other achievements include three patents based on his research, the preparation
-and management of two large scale Finnish national research projects, and the
-organization of several workshops at top conferences in robotics.
+Francesco has published widely in leading robotics and AI venues, holds three
+patents based on his research, and has secured substantial competitive funding
+from national agencies and industry. He is an active member of the robotics
+community, having organized workshops at IROS and ICRA, served as an associate
+editor and reviewer for major conferences and journals. His work is driven by a
+long-term vision of embodied AI systems that can operate robustly in complex
+human-centric environments, grounded in principled models of perception,
+representation, and interaction.
