@@ -139,6 +139,11 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/251010_guest_lecture_tampere/";
+            },},{id: "news-i-was-invited-to-give-a-guest-lecture-on-semantic-mapping-at-university-of-turku",
+          title: 'I was invited to give a guest lecture on semantic mapping at University...',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/251209_guest_lecture_turku/";
             },},{
         id: 'social-email',
         title: 'email',
