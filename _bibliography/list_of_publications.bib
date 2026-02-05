@@ -1535,49 +1535,6 @@
   preview     = {iros_1_24.jpg}
 }
 
-@misc{202507_chaubey_misc,
-  bibtex_show = {true},
-  title       = {{Minimal} {Intervention} {Shared} {Control} with
-                 {Guaranteed} {Safety} under {Non}-{Convex} {Constraints}},
-  author      = {Chaubey, Shivam and Verdoja, Francesco and Deka, Shankar and
-                 Kyrki, Ville},
-  url         = {https://arxiv.org/abs/2507.02438},
-  month       = jul,
-  year        = {2025},
-  abstract    = {Shared control combines human intention with autonomous
-                 decision-making, from low-level safety overrides to high-level
-                 task guidance, enabling systems that adapt to users while
-                 ensuring safety and performance. This enhances task
-                 effectiveness and user experience across domains such as
-                 assistive robotics, teleoperation, and autonomous driving.
-                 However, existing shared control methods, based on e.g. Model
-                 Predictive Control, Control Barrier Functions, or
-                 learning-based control, struggle with feasibility, scalability,
-                 or safety guarantees, particularly since the user input is
-                 unpredictable.
-                 To address these challenges, we propose an assistive controller
-                 framework based on Constrained Optimal Control Problem that
-                 incorporates an offline-computed Control Invariant Set,
-                 enabling online computation of control actions that ensure
-                 feasibility, strict constraint satisfaction, and minimal
-                 override of user intent. Moreover, the framework can
-                 accommodate structured class of non-convex constraints, which
-                 are common in real-world scenarios. We validate the approach
-                 through a large-scale user study with 66 participants--one of
-                 the most extensive in shared control research--using a computer
-                 game environment to assess task load, trust, and perceived
-                 control, in addition to performance. The results show
-                 consistent improvements across all these aspects without
-                 compromising safety and user intent.},
-  arxiv       = {2507.02438},
-  pdf         = {https://arxiv.org/pdf/2507.02438},
-  abbr        = {ICRA},
-  preview     = {icra_1_26.png},
-  publisher   = {arXiv},
-  note        = {2026 {IEEE} {Int.}\ {Conf.}\ on {Robotics} \& {Automation}
-                 (ICRA) (submitted)}
-}
-
 @misc{202507_zhang_modesuite,
   bibtex_show = {true},
   title       = {{MoDeSuite}: Robot Learning Task Suite for Benchmarking Mobile
@@ -1785,44 +1742,6 @@
   publisher   = {IEEE}
 }
 
-@misc{202510_pekkanen_quash,
-  bibtex_show = {true},
-  title       = {{QuASH}: {Using} {Natural}-{Language} {Heuristics} to {Query}
-                 {Visual}-{Language} {Robotic} {Maps}},
-  shorttitle  = {{QuASH}},
-  author      = {Pekkanen, Matti and Verdoja, Francesco and Kyrki, Ville},
-  url         = {http://arxiv.org/abs/2510.14546},
-  month       = oct,
-  year        = {2025},
-  funding     = {hypermaps},
-  abstract    = {Embeddings from Visual-Language Models are increasingly
-                 utilized to represent semantics in robotic maps, offering an
-                 open-vocabulary scene understanding that surpasses traditional,
-                 limited labels. Embeddings enable on-demand querying by
-                 comparing embedded user text prompts to map embeddings via a
-                 similarity metric. The key challenge in performing the task
-                 indicated in a query is that the robot must determine the parts
-                 of the environment relevant to the query. This paper proposes a
-                 solution to this challenge. We leverage natural-language
-                 synonyms and antonyms associated with the query within the
-                 embedding space, applying heuristics to estimate the language
-                 space relevant to the query, and use that to train a classifier
-                 to partition the environment into matches and non-matches. We
-                 evaluate our method through extensive experiments, querying
-                 both maps and standard image benchmarks. The results
-                 demonstrate increased queryability of maps and images. Our
-                 querying technique is agnostic to the representation and
-                 encoder used, and requires limited training.},
-  arxiv       = {2510.14546},
-  pdf         = {https://arxiv.org/pdf/2510.14546},
-  code        = {https://github.com/aalto-intelligent-robotics/quash},
-  abbr        = {ICRA},
-  preview     = {icra_3_26.png},
-  publisher   = {arXiv},
-  note        = {2026 {IEEE} {Int.}\ {Conf.}\ on {Robotics} \& {Automation}
-                 (ICRA) (submitted)}
-}
-
 @inproceedings{202510_pekkanen_visual-language,
   bibtex_show = {true},
   title       = {Do {Visual}-{Language} {Grid} {Maps} {Capture} {Latent}
@@ -1868,5 +1787,131 @@
   pdf         = {https://arxiv.org/pdf/2403.10117},
   abbr        = {IROS},
   preview     = {iros_2_25.png},
+  publisher   = {IEEE}
+}
+
+@misc{202602_kuhn_relational,
+  bibtex_show = {true},
+  title       = {Relational {Scene} {Graphs} for {Object} {Grounding} of
+                 {Natural} {Language} {Commands}},
+  author      = {Kuhn, Julia and Verdoja, Francesco and Mihaylova, Tsvetomila
+                 and Kyrki, Ville},
+  url         = {http://arxiv.org/abs/2602.04635},
+  month       = feb,
+  year        = {2026},
+  funding     = {hypermaps},
+  abstract    = {Robots are finding wider adoption in human environments,
+                 increasing the need for natural human-robot interaction.
+                 However, understanding a natural language command requires the
+                 robot to infer the intended task and how to decompose it into
+                 executable actions, and to ground those actions in the robot's
+                 knowledge of the environment, including relevant objects,
+                 agents, and locations. This challenge can be addressed by
+                 combining the capabilities of Large language models (LLMs) to
+                 understand natural language with 3D scene graphs (3DSGs) for
+                 grounding inferred actions in a semantic representation of the
+                 environment. However, many 3DSGs lack explicit spatial
+                 relations between objects, even though humans often rely on
+                 these relations to describe an environment. This paper
+                 investigates whether incorporating open- or closed-vocabulary
+                 spatial relations into 3DSGs can improve the ability of LLMs to
+                 interpret natural language commands. To address this, we
+                 propose an LLM-based pipeline for target object grounding from
+                 open-vocabulary language commands and a vision language model
+                 (VLM)-based pipeline to add open-vocabulary spatial edges to
+                 3DSGs from images captured while mapping. Finally, two LLMs are
+                 evaluated in a study assessing their performance on the
+                 downstream task of target object grounding. Our study
+                 demonstrates that explicit spatial relations improve the
+                 ability of LLMs to ground objects. Moreover, open-vocabulary
+                 relation generation with VLMs proves feasible from
+                 robot-captured images, but their advantage over
+                 closed-vocabulary relations is found to be limited.},
+  arxiv       = {2602.04635},
+  pdf         = {https://arxiv.org/pdf/2602.04635},
+  abbr        = {RA-L},
+  preview     = {ral_1_26.png},
+  publisher   = {arXiv},
+  note        = {IEEE Robotics and Automation Letters (submitted)}
+}
+
+@inproceedings{202606_chaubey_misc,
+  bibtex_show = {true},
+  title       = {{Minimal} {Intervention} {Shared} {Control} with
+                 {Guaranteed} {Safety} under {Non}-{Convex} {Constraints}},
+  booktitle   = {2026 {IEEE} {Int.} {Conf.} on {Robotics} and {Automation}
+                 ({ICRA})},
+  author      = {Chaubey, Shivam and Verdoja, Francesco and Deka, Shankar and
+                 Kyrki, Ville},
+  url         = {https://arxiv.org/abs/2507.02438},
+  month       = jun,
+  year        = {2026},
+  abstract    = {Shared control combines human intention with autonomous
+                 decision-making, from low-level safety overrides to high-level
+                 task guidance, enabling systems that adapt to users while
+                 ensuring safety and performance. This enhances task
+                 effectiveness and user experience across domains such as
+                 assistive robotics, teleoperation, and autonomous driving.
+                 However, existing shared control methods, based on e.g. Model
+                 Predictive Control, Control Barrier Functions, or
+                 learning-based control, struggle with feasibility, scalability,
+                 or safety guarantees, particularly since the user input is
+                 unpredictable.
+                 To address these challenges, we propose an assistive controller
+                 framework based on Constrained Optimal Control Problem that
+                 incorporates an offline-computed Control Invariant Set,
+                 enabling online computation of control actions that ensure
+                 feasibility, strict constraint satisfaction, and minimal
+                 override of user intent. Moreover, the framework can
+                 accommodate structured class of non-convex constraints, which
+                 are common in real-world scenarios. We validate the approach
+                 through a large-scale user study with 66 participants--one of
+                 the most extensive in shared control research--using a computer
+                 game environment to assess task load, trust, and perceived
+                 control, in addition to performance. The results show
+                 consistent improvements across all these aspects without
+                 compromising safety and user intent.},
+  arxiv       = {2507.02438},
+  pdf         = {https://arxiv.org/pdf/2507.02438},
+  abbr        = {ICRA},
+  preview     = {icra_1_26.png},
+  publisher   = {IEEE}
+}
+
+@inproceedings{202606_pekkanen_quash,
+  bibtex_show = {true},
+  title       = {{QuASH}: {Using} {Natural}-{Language} {Heuristics} to {Query}
+                 {Visual}-{Language} {Robotic} {Maps}},
+  shorttitle  = {{QuASH}},
+  booktitle   = {2026 {IEEE} {Int.} {Conf.} on {Robotics} and {Automation}
+                 ({ICRA})},
+  author      = {Pekkanen, Matti and Verdoja, Francesco and Kyrki, Ville},
+  url         = {http://arxiv.org/abs/2510.14546},
+  month       = jun,
+  year        = {2026},
+  funding     = {hypermaps},
+  abstract    = {Embeddings from Visual-Language Models are increasingly
+                 utilized to represent semantics in robotic maps, offering an
+                 open-vocabulary scene understanding that surpasses traditional,
+                 limited labels. Embeddings enable on-demand querying by
+                 comparing embedded user text prompts to map embeddings via a
+                 similarity metric. The key challenge in performing the task
+                 indicated in a query is that the robot must determine the parts
+                 of the environment relevant to the query. This paper proposes a
+                 solution to this challenge. We leverage natural-language
+                 synonyms and antonyms associated with the query within the
+                 embedding space, applying heuristics to estimate the language
+                 space relevant to the query, and use that to train a classifier
+                 to partition the environment into matches and non-matches. We
+                 evaluate our method through extensive experiments, querying
+                 both maps and standard image benchmarks. The results
+                 demonstrate increased queryability of maps and images. Our
+                 querying technique is agnostic to the representation and
+                 encoder used, and requires limited training.},
+  arxiv       = {2510.14546},
+  pdf         = {https://arxiv.org/pdf/2510.14546},
+  code        = {https://github.com/aalto-intelligent-robotics/quash},
+  abbr        = {ICRA},
+  preview     = {icra_3_26.png},
   publisher   = {IEEE}
 }

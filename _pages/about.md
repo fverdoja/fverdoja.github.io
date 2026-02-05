@@ -37,8 +37,8 @@ Research Fellowship grant from the Research Council of Finland for his project
 [Hypermaps]({{ "/funding/2023_hypermaps/" | relative_url }}), which aims to
 address the complexity gap in robotic mapping through unified spatial, semantic,
 and dynamic environment representations. At Aalto University, Francesco also
-serves as Staff Scientist and coordinates the Aalto Robot Lab. His research
-targets autonomous agents in physical spaces, with a focus on
+holds a permanent position as Staff Scientist and coordinates the Aalto Robot
+Lab. His research targets autonomous agents in physical spaces, with a focus on
 representation-centric approaches that enhance environment understanding,
 long-term operation, and uncertainty-aware decision-making.
 
