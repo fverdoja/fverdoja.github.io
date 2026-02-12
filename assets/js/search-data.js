@@ -144,6 +144,11 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/251209_guest_lecture_turku/";
+            },},{id: "news-i-will-be-at-icra26-with-two-papers",
+          title: 'I will be at ICRA26 with two papers',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/260212_icra26/";
             },},{
         id: 'social-email',
         title: 'email',
