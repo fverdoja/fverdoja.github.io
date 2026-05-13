@@ -967,7 +967,7 @@
   title       = {{GNSS}-denied geolocalization of {UAVs} by visual matching of
                  onboard camera images with orthophotos},
   doi         = {10.1109/ICAR53236.2021.9659333},
-  booktitle   = {2021 {IEEE} {Int.}\ {Conf.}\ on {Advanced} {Robotics} 
+  booktitle   = {2021 {IEEE} {Int.}\ {Conf.}\ on {Advanced} {Robotics}
                  ({ICAR})},
   publisher   = {IEEE},
   author      = {Kinnari, Jouko and Verdoja, Francesco and Kyrki, Ville},
@@ -1743,54 +1743,6 @@
   preview     = {26_dai.png}
 }
 
-@inproceedings{202607_zhang_remobot,
-  address     = {Genoa, Italy},
-  bibtex_show = {true},
-  title       = {{ReMoBot}: {Retrieval}-{Based} {Few}-{Shot} {Imitation}
-                 {Learning} for {Mobile} {Manipulation} with {Vision}
-                 {Foundation} {Models}},
-  shorttitle  = {{ReMoBot}},
-  booktitle   = {2026 {IEEE/ASME} {Int.}\ {Conf.}\ on {Advanced} {Intelligent}
-                 {Mechatronics} (AIM)},
-  publisher   = {IEEE},
-  author      = {Zhang, Yuying and Yang, Wenyan and Verdoja, Francesco and
-                 Kyrki, Ville and Pajarinen, Joni},
-  url         = {http://arxiv.org/abs/2408.15919},
-  month       = jul,
-  year        = {2026},
-  abstract    = {Imitation learning (IL) algorithms typically distill experience
-                 into parametric behavior policies to mimic expert
-                 demonstrations. However, with limited demonstrations, existing
-                 methods often struggle to generate accurate actions,
-                 particularly under partial observability. To address this
-                 problem, we introduce a few-shot IL approach, ReMoBot, which
-                 directly retrieves information from demonstrations to solve
-                 Mobile manipulation tasks with ego-centric visual observations.
-                 Given the current observation, ReMoBot utilizes vision
-                 foundation models to identify relevant demonstrations,
-                 considering visual similarity w.r.t. both individual
-                 observations and history trajectories. A motion selection
-                 policy then selects the proper command for the robot until the
-                 task is successfully completed. The performance of ReMoBot is
-                 evaluated on three mobile manipulation tasks with a Boston
-                 Dynamics Spot robot in both simulation and the real world.
-                 After benchmarking five approaches in simulation, we compare
-                 our method with two baselines in the real world, training
-                 directly on the real-world dataset without sim-to-real
-                 transfer. With only 20 demonstrations, ReMoBot outperforms the
-                 baselines, achieving high success rates in Table Uncover (70\%)
-                 and Gap Cover (80\%), while also showing promising performance
-                 on the more challenging Curtain Open task in the real-world
-                 setting. Furthermore, ReMoBot demonstrates generalization
-                 across varying robot positions, object sizes, and material
-                 types.},
-  arxiv       = {2408.15919},
-  pdf         = {https://arxiv.org/pdf/2408.15919},
-  website     = {https://sites.google.com/view/remobot/home},
-  abbr        = {AIM},
-  preview     = {26_aim.png}
-}
-
 @misc{202603_catalano_rheos,
   bibtex_show = {true},
   title       = {Rheos: {Modelling} {Continuous} {Motion} {Dynamics} in
@@ -2046,4 +1998,52 @@
   website     = {https://sites.google.com/view/modesuite/home},
   abbr        = {RA-L},
   preview     = {25_ral.png}
+}
+
+@inproceedings{202607_zhang_remobot,
+  address     = {Genoa, Italy},
+  bibtex_show = {true},
+  title       = {{ReMoBot}: {Retrieval}-{Based} {Few}-{Shot} {Imitation}
+                 {Learning} for {Mobile} {Manipulation} with {Vision}
+                 {Foundation} {Models}},
+  shorttitle  = {{ReMoBot}},
+  booktitle   = {2026 {IEEE/ASME} {Int.}\ {Conf.}\ on {Advanced} {Intelligent}
+                 {Mechatronics} (AIM)},
+  publisher   = {IEEE},
+  author      = {Zhang, Yuying and Yang, Wenyan and Verdoja, Francesco and
+                 Kyrki, Ville and Pajarinen, Joni},
+  url         = {http://arxiv.org/abs/2408.15919},
+  month       = jul,
+  year        = {2026},
+  abstract    = {Imitation learning (IL) algorithms typically distill experience
+                 into parametric behavior policies to mimic expert
+                 demonstrations. However, with limited demonstrations, existing
+                 methods often struggle to generate accurate actions,
+                 particularly under partial observability. To address this
+                 problem, we introduce a few-shot IL approach, ReMoBot, which
+                 directly retrieves information from demonstrations to solve
+                 Mobile manipulation tasks with ego-centric visual observations.
+                 Given the current observation, ReMoBot utilizes vision
+                 foundation models to identify relevant demonstrations,
+                 considering visual similarity w.r.t. both individual
+                 observations and history trajectories. A motion selection
+                 policy then selects the proper command for the robot until the
+                 task is successfully completed. The performance of ReMoBot is
+                 evaluated on three mobile manipulation tasks with a Boston
+                 Dynamics Spot robot in both simulation and the real world.
+                 After benchmarking five approaches in simulation, we compare
+                 our method with two baselines in the real world, training
+                 directly on the real-world dataset without sim-to-real
+                 transfer. With only 20 demonstrations, ReMoBot outperforms the
+                 baselines, achieving high success rates in Table Uncover (70\%)
+                 and Gap Cover (80\%), while also showing promising performance
+                 on the more challenging Curtain Open task in the real-world
+                 setting. Furthermore, ReMoBot demonstrates generalization
+                 across varying robot positions, object sizes, and material
+                 types.},
+  arxiv       = {2408.15919},
+  pdf         = {https://arxiv.org/pdf/2408.15919},
+  website     = {https://sites.google.com/view/remobot/home},
+  abbr        = {AIM},
+  preview     = {26_aim.png}
 }
