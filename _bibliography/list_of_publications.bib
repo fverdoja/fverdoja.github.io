@@ -1743,96 +1743,6 @@
   preview     = {26_dai.png}
 }
 
-@misc{202603_catalano_rheos,
-  bibtex_show = {true},
-  title       = {Rheos: {Modelling} {Continuous} {Motion} {Dynamics} in
-                 {Hierarchical} {3D} {Scene} {Graphs}},
-  shorttitle  = {Rheos},
-  author      = {Catalano, Iacopo and Verdoja, Francesco and Civera, Javier and
-                 Peña-Queralta, Jorge and Placed, Julio A.},
-  url         = {http://arxiv.org/abs/2603.20239},
-  month       = mar,
-  year        = {2026},
-  funding     = {hypermaps},
-  abstract    = {3D Scene Graphs (3DSGs) provide hierarchical, multi-resolution
-                 abstractions that encode the geometric and semantic structure
-                 of an environment, yet their treatment of dynamics remains
-                 limited to tracking individual agents. Maps of Dynamics (MoDs)
-                 complement this by modeling aggregate motion patterns, but rely
-                 on uniform grid discretizations that lack semantic grounding
-                 and scale poorly. We present Rheos, a framework that explicitly
-                 embeds continuous directional motion models into an additional
-                 dynamics layer of a hierarchical 3DSG that enhances the
-                 navigational properties of the graph. Each dynamics node
-                 maintains a semi-wrapped Gaussian mixture model that captures
-                 multimodal directional flow as a principled probability
-                 distribution with explicit uncertainty, replacing the discrete
-                 histograms used in prior work. To enable online operation,
-                 Rheos employs reservoir sampling for bounded-memory observation
-                 buffers, parallel per-cell model updates and a principled
-                 Bayesian Information Criterion (BIC) sweep that selects the
-                 optimal number of mixture components, reducing per-update
-                 initialization cost from quadratic to linear in the number of
-                 samples. Evaluated across four spatial resolutions in a
-                 simulated pedestrian environment, Rheos consistently
-                 outperforms the discrete baseline under continuous as well as
-                 unfavorable discrete metrics. We release our implementation as
-                 open source.},
-  arxiv       = {2603.20239},
-  pdf         = {https://arxiv.org/pdf/2603.20239},
-  abbr        = {IROS},
-  preview     = {26_iros.png},
-  publisher   = {arXiv},
-  note        = {2026 {IEEE}/{RSJ} {Int.}\ {Conf.}\ on {Intelligent} {Robots}
-                 and {Systems} ({IROS}) (submitted)}
-}
-
-@misc{202603_kuhn_relational,
-  bibtex_show = {true},
-  title       = {Relational {Scene} {Graphs} for {Object} {Grounding} of
-                 {Natural} {Language} {Commands}},
-  author      = {Kuhn, Julia and Verdoja, Francesco and Mihaylova, Tsvetomila
-                 and Kyrki, Ville},
-  url         = {http://arxiv.org/abs/2602.04635},
-  month       = mar,
-  year        = {2026},
-  funding     = {hypermaps},
-  abstract    = {Robots are finding wider adoption in human environments,
-                 increasing the need for natural human-robot interaction.
-                 However, understanding a natural language command requires the
-                 robot to infer the intended task and how to decompose it into
-                 executable actions, and to ground those actions in the robot's
-                 knowledge of the environment, including relevant objects,
-                 agents, and locations. This challenge can be addressed by
-                 combining the capabilities of Large language models (LLMs) to
-                 understand natural language with 3D scene graphs (3DSGs) for
-                 grounding inferred actions in a semantic representation of the
-                 environment. However, many 3DSGs lack explicit spatial
-                 relations between objects, even though humans often rely on
-                 these relations to describe an environment. This paper
-                 investigates whether incorporating open- or closed-vocabulary
-                 spatial relations into 3DSGs can improve the ability of LLMs to
-                 interpret natural language commands. To address this, we
-                 propose an LLM-based pipeline for target object grounding from
-                 open-vocabulary language commands and a vision language model
-                 (VLM)-based pipeline to add open-vocabulary spatial edges to
-                 3DSGs from images captured while mapping. Finally, two LLMs are
-                 evaluated in a study assessing their performance on the
-                 downstream task of target object grounding. Our study
-                 demonstrates that explicit spatial relations improve the
-                 ability of LLMs to ground objects. Moreover, open-vocabulary
-                 relation generation with VLMs proves feasible from
-                 robot-captured images, but their advantage over
-                 closed-vocabulary relations is found to be limited.},
-  arxiv       = {2602.04635},
-  pdf         = {https://arxiv.org/pdf/2602.04635},
-  abbr        = {RO-MAN},
-  preview     = {26_roman.png},
-  publisher   = {arXiv},
-  note        = {2026 IEEE {IEEE} {Int.}\ {Conf.}\ on {Robot} and {Human}
-                 {Interactive} {Communication} ({RO}-{MAN}) (submitted)}
-}
-
 @article{202605_nguyen_event-grounding,
   bibtex_show = {true},
   title       = {Event-{Grounding} {Graph}: {Unified} {Spatio}-{Temporal}
@@ -2046,4 +1956,97 @@
   website     = {https://sites.google.com/view/remobot/home},
   abbr        = {AIM},
   preview     = {26_aim.png}
+}
+
+@inproceedings{202608_kuhn_relational,
+  address     = {Kitakyushu, Japan},
+  bibtex_show = {true},
+  title       = {Relational {Scene} {Graphs} for {Object} {Grounding} of
+                 {Natural} {Language} {Commands}},
+  booktitle   = {2026 {IEEE} {Int.}\ {Conf.}\ on {Robot} and {Human}
+                 {Interactive} {Communication} ({RO-MAN})},
+  publisher   = {IEEE},
+  author      = {Kuhn, Julia and Verdoja, Francesco and Mihaylova, Tsvetomila
+                 and Kyrki, Ville},
+  url         = {http://arxiv.org/abs/2602.04635},
+  month       = aug,
+  year        = {2026},
+  funding     = {hypermaps},
+  abstract    = {Robots are finding wider adoption in human environments,
+                 increasing the need for natural human-robot interaction.
+                 However, understanding a natural language command requires the
+                 robot to infer the intended task and how to decompose it into
+                 executable actions, and to ground those actions in the robot's
+                 knowledge of the environment, including relevant objects,
+                 agents, and locations. This challenge can be addressed by
+                 combining the capabilities of Large language models (LLMs) to
+                 understand natural language with 3D scene graphs (3DSGs) for
+                 grounding inferred actions in a semantic representation of the
+                 environment. However, many 3DSGs lack explicit spatial
+                 relations between objects, even though humans often rely on
+                 these relations to describe an environment. This paper
+                 investigates whether incorporating open- or closed-vocabulary
+                 spatial relations into 3DSGs can improve the ability of LLMs to
+                 interpret natural language commands. To address this, we
+                 propose an LLM-based pipeline for target object grounding from
+                 open-vocabulary language commands and a vision language model
+                 (VLM)-based pipeline to add open-vocabulary spatial edges to
+                 3DSGs from images captured while mapping. Finally, two LLMs are
+                 evaluated in a study assessing their performance on the
+                 downstream task of target object grounding. Our study
+                 demonstrates that explicit spatial relations improve the
+                 ability of LLMs to ground objects. Moreover, open-vocabulary
+                 relation generation with VLMs proves feasible from
+                 robot-captured images, but their advantage over
+                 closed-vocabulary relations is found to be limited.},
+  arxiv       = {2602.04635},
+  pdf         = {https://arxiv.org/pdf/2602.04635},
+  code        = {https://github.com/aalto-intelligent-robotics/object_grounding_scene_graph},
+  abbr        = {RO-MAN},
+  preview     = {26_roman.png}
+}
+
+@inproceedings{202609_catalano_rheos,
+  address     = {Pittsburgh, PA, USA},
+  bibtex_show = {true},
+  title       = {Rheos: {Modelling} {Continuous} {Motion} {Dynamics} in
+                 {Hierarchical} {3D} {Scene} {Graphs}},
+  shorttitle  = {Rheos},
+  booktitle   = {2026 {IEEE}/{RSJ} {Int.}\ {Conf.}\ on {Intelligent} {Robots}
+                 and {Systems} ({IROS})},
+  publisher   = {IEEE},
+  author      = {Catalano, Iacopo and Verdoja, Francesco and Civera, Javier and
+                 Peña-Queralta, Jorge and Placed, Julio A.},
+  url         = {http://arxiv.org/abs/2603.20239},
+  month       = sep,
+  year        = {2026},
+  funding     = {hypermaps},
+  abstract    = {3D Scene Graphs (3DSGs) provide hierarchical, multi-resolution
+                 abstractions that encode the geometric and semantic structure
+                 of an environment, yet their treatment of dynamics remains
+                 limited to tracking individual agents. Maps of Dynamics (MoDs)
+                 complement this by modeling aggregate motion patterns, but rely
+                 on uniform grid discretizations that lack semantic grounding
+                 and scale poorly. We present Rheos, a framework that explicitly
+                 embeds continuous directional motion models into an additional
+                 dynamics layer of a hierarchical 3DSG that enhances the
+                 navigational properties of the graph. Each dynamics node
+                 maintains a semi-wrapped Gaussian mixture model that captures
+                 multimodal directional flow as a principled probability
+                 distribution with explicit uncertainty, replacing the discrete
+                 histograms used in prior work. To enable online operation,
+                 Rheos employs reservoir sampling for bounded-memory observation
+                 buffers, parallel per-cell model updates and a principled
+                 Bayesian Information Criterion (BIC) sweep that selects the
+                 optimal number of mixture components, reducing per-update
+                 initialization cost from quadratic to linear in the number of
+                 samples. Evaluated across four spatial resolutions in a
+                 simulated pedestrian environment, Rheos consistently
+                 outperforms the discrete baseline under continuous as well as
+                 unfavorable discrete metrics. We release our implementation as
+                 open source.},
+  arxiv       = {2603.20239},
+  pdf         = {https://arxiv.org/pdf/2603.20239},
+  abbr        = {IROS},
+  preview     = {26_iros.png}
 }
