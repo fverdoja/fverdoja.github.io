@@ -1910,6 +1910,48 @@
   preview     = {25_ral.png}
 }
 
+@misc{202606_zhang_regil,
+  bibtex_show = {true},
+  title       = {{ReGIL}: Retrieval-Guided Imitation Learning from a Single
+                 Demonstration},
+  shorttitle  = {{ReGIL}},
+  author      = {Zhang, Yuying and Verdoja, Francesco and Yang, Wenyan and
+                 Kyrki, Ville},
+  url         = {https://arxiv.org/abs/2606.09381},
+  month       = jun,
+  year        = {2026},
+  abstract    = {Learning robot manipulation policies with deep neural networks
+                 from a single demonstration remains highly challenging, as even
+                 small deviations from the demonstrated trajectory can quickly
+                 compound into failure, while collecting substantial online
+                 interaction data is costly. We propose ReGIL, a
+                 retrieval-guided imitation learning framework that treats a
+                 single demonstration as an external memory. ReGIL repeatedly
+                 queries this static memory throughout training to
+                 simultaneously guide exploration, generate the regularization
+                 buffer, and construct rewards. Specifically, it computes
+                 rewards through local temporal alignment between the current
+                 trajectory and the retrieved segment, providing step-wise and
+                 informative feedback for policy improvement. We evaluate ReGIL
+                 on robotic manipulation tasks from the LIBERO and Meta-World
+                 benchmarks under the single demonstration setting. ReGIL
+                 outperforms prior baselines in both success rate and training
+                 efficiency. In real-robot experiments, using only one
+                 demonstration and less than one hour of online training, ReGIL
+                 achieves over 75% success rate across three manipulation tasks
+                 with randomness in both initial robot pose and target position.
+                 These results demonstrate that leveraging the single
+                 demonstration as reusable memory can provide more than static
+                 supervision for efficient robot learning.},
+  arxiv       = {2606.09381},
+  pdf         = {https://arxiv.org/pdf/2606.09381},
+  website     = {https://regil2026.github.io/},
+  abbr        = {CoRL},
+  preview     = {26_corl.png},
+  publisher   = {arXiv},
+  note        = {2026 Conference on Robot Learning (submitted)}
+}
+
 @inproceedings{202607_zhang_remobot,
   address     = {Genoa, Italy},
   bibtex_show = {true},

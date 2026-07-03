@@ -6,8 +6,8 @@ funder: National Reseach Council of Finland
 funder_link: https://www.aka.fi/en/
 start_date: 2023-09-01
 end_date: 2027-08-31
-my_role: Principal investigator
-budget: 834k€
+my_role: Principal Investigator
+budget: 834k€ (funded at 70%)
 decision_link: https://research.fi/en/results/funding/78102
 description: >
   4-year research fellowship on multi-layer and semantic spatial representations
