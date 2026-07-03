@@ -84,6 +84,16 @@ ninja.data = [{
           description: "4-year research fellowship on multi-layer and semantic spatial representations for robotics",
           section: "Funding",handler: () => {
               window.location.href = "/funding/2023_hypermaps/";
+            },},{id: "funding-industrial-contract-research",
+          title: 'Industrial contract research',
+          description: "Multiple R&amp;D projects on AI applied to environment perception, understanding, and manipulation",
+          section: "Funding",handler: () => {
+              window.location.href = "/funding/2024_contract/";
+            },},{id: "funding-vines",
+          title: 'VINES',
+          description: "3-year US-Finland joint project on the application of foundational semantic communication to private networking technologies, spatial AI, and robotics",
+          section: "Funding",handler: () => {
+              window.location.href = "/funding/2026_vines/";
             },},{id: "news-finnish-academy-research-fellowship-awarded-to-the-hypermaps-project",
           title: 'Finnish Academy Research Fellowship awarded to the Hypermaps project',
           description: "",
@@ -149,6 +159,11 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/260212_icra26/";
+            },},{id: "news-our-project-on-semantic-communication-was-funded-in-joint-us-nsf-business-finland-call",
+          title: 'Our project on semantic communication was funded in joint US NSF/Business Finland call...',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/260701_vines/";
             },},{
         id: 'social-email',
         title: 'email',
