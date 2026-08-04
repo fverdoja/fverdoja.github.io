@@ -34,6 +34,11 @@ layout: default
           <span class="fa-li"><i class="fa-solid fa-coins fa-sm"></i></span><strong>Budget:</strong> {{ page.budget }}
         </li>
       {% endif %}
+      {% if page.acceptance_rate %}
+        <li>
+          <span class="fa-li"><i class="fa-solid fa-percent fa-sm"></i></span><strong>Acceptance rate:</strong> {{ page.acceptance_rate }}
+        </li>
+      {% endif %}
       {% if page.start_date %}
         <li>
           <span class="fa-li"><i class="fa-solid fa-calendar fa-sm"></i></span><strong>Period:</strong> {{ page.start_date | date: '%b %Y' }}–
