@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/devcontainers/jekyll
+FROM mcr.microsoft.com/devcontainers/jekyll:2
 
 # Fix: Remove the broken Yarn repository from the apt sources.
 # This prevents 'apt-get update' from failing due to the missing GPG key.
