@@ -45,14 +45,19 @@ layout: default
           {%- if page.end_date %}{{ page.end_date | date: '%b %Y' }}{% else %}now{% endif %}
         </li>
       {% endif %}
+      {% if page.decision_link %}
+        <li>
+          {% if page.decision_number %}
+            <span class="fa-li"><i class="fa-solid fa-link fa-sm"></i></span><strong>Funding decision:</strong>
+            <a href="{{ page.decision_link }}">{{ page.decision_number }}</a>
+          {% else %}
+            <span class="fa-li"><i class="fa-solid fa-link fa-sm"></i></span><a href="{{ page.decision_link }}">Funding decision</a>
+          {% endif %}
+        </li>
+      {% endif %}
       {% if page.website %}
         <li>
           <span class="fa-li"><i class="fa-solid fa-link fa-sm"></i></span><a href="{{ page.website }}">Project website</a>
-        </li>
-      {% endif %}
-      {% if page.decision_link %}
-        <li>
-          <span class="fa-li"><i class="fa-solid fa-link fa-sm"></i></span><a href="{{ page.decision_link }}">Funding decision</a>
         </li>
       {% endif %}
     </ul>

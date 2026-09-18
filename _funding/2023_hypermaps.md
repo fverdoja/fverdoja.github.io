@@ -9,6 +9,7 @@ end_date: 2027-08-31
 my_role: Principal Investigator
 budget: 834k€ (funded at 70%)
 acceptance_rate: 15% of applications
+decision_number: 354909
 decision_link: https://research.fi/en/results/funding/78102
 description: >
   4-year research fellowship on multi-layer and semantic spatial representations

@@ -8,11 +8,13 @@ start_date: 2022-05-01
 end_date: 2024-04-30
 partners: >
   Aalto University (PI: Prof. Ville Kyrki), LUT-University, Oulu University, 
-  GIM Oy, Sandvik Oy, Ponsse Oy, Raute Oy, Mantsinen Oy
+  GIM, Sandvik, Ponsse, Raute, Mantsinen
 my_role: >
   Project manager (Aalto), considerable involvement in proposal preparation, 
   writing, and coordination
-budget: 2124k€ total, 671k€ Aalto
+budget: 2124k€ total, 671k€ Aalto (funded at 70%)
+decision_number: 9249/31/2021
+decision_link: https://tietopankki.businessfinland.fi/anonymous/extensions/Public_research_and_corporate_projects/Public_research_and_corporate_projects.html
 description: >
   2-year co-innovation project on the development of semi-autonomous assistance
   systems for heavy industrial machines

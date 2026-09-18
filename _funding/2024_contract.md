@@ -2,7 +2,7 @@
 layout: funding
 title: Industrial contract research
 subtitle: R&D projects contracted by Finnish industrial partners
-funder: Sandvik Oy, John Deere Forestry Oy, KONE Oyj
+funder: Sandvik, John Deere Forestry, KONE
 start_date: 2023-01-01
 end_date: 2028-03-31
 my_role: Company contact, proposal preparation, project manager, technical
@@ -12,6 +12,6 @@ description: >
   Multiple R&D projects on AI applied to environment perception, understanding,
   and manipulation
 category: current
-related_publications: true
+related_publications: false
 publication_key: contract
 ---

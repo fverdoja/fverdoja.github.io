@@ -10,31 +10,36 @@ start_date: 2026-07-01
 end_date: 2029-06-30
 partners: >
   Aalto University, Massachusetts Institute of Technology (MIT), Stevens
-  Institute of Technology, Nokia Bell Lab
+  Institute of Technology, Nokia Bell Lab, Ponsse, Mitsubishi Logisnext Europe 
+  (MLE)
 my_role: >
   Co-Principal Investigator
-budget: 1M€ for Aalto
+budget: 877k€ for Aalto (funded at 70%)
+decision_number: 780/31/2026
+decision_link: https://tietopankki.businessfinland.fi/anonymous/extensions/Public_research_and_corporate_projects/Public_research_and_corporate_projects.html
 description: >
   3-year US-Finland joint project on the application of foundational semantic
   communication to private networking technologies, spatial AI, and
   robotics
 abstract: >
-  Next-Generation (NextG) networks will build on the continuum of communication
-  and computing, from the core to the edge, to drastically improve the network
-  KPIs in terms of coverage, throughput, and latency. This is envisioned by 3GPP
-  in TS 32.150 and discussed in the 3GPP 6G System Architecture (SA) 2 study
-  group towards 6G networks. The integration of communication and computing is
-  becoming particularly prevalent in private wireless deployments for
-  mission-critical industry systems such as autonomous robotics, tactical
-  surveillance, autonomous vehicles, and smart manufacturing. In such
-  deployments, situational awareness of physical space is a key requirement.
-  In this project we bring together an international US/Finland team with
-  extensive experience in private networking technologies, spatial AI and
-  robotics, to address the numerous challenges associated with situational
-  awareness for industry. We will focus on applying recent foundational results
-  in semantic communications to concrete challenges arising in the smart
-  manufacturing vertical.
+  The project pioneers mission-critical semantic communications for intelligent 
+  work machines operating in complex industrial environments. By integrating 
+  next-generation (NextG) wireless networks, artificial intelligence, and 
+  robotics, the project aims to enhance situational awareness, safety, and 
+  operational efficiency in smart factories, warehouses, and forestry 
+  operations.
+  The Finnish consortium, led by Aalto University in collaboration with Ponsse,
+  Mitsubishi Logisnext Europe (MLE), and Nokia, will develop and demonstrate 
+  semantic communication technologies that enable machines to understand and 
+  reason about their environments. These technologies will be tested in 
+  real-world scenarios, including forklift coordination in logistics, planning 
+  in forestry, and inventory tracking in advanced manufacturing facilities.
+  The project introduces a novel communication paradigm where only semantically 
+  relevant information is transmitted, reducing bandwidth needs while improving
+  decision-making. This enables more responsive and energy-efficient robotic 
+  systems. The research will also explore human-robot interaction through 
+  natural language interfaces powered by large language models.
 category: current
-related_publications: true
+related_publications: false
 publication_key: vines
 ---
