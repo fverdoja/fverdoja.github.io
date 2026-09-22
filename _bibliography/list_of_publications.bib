@@ -2051,6 +2051,51 @@
   preview     = {26_iros.png}
 }
 
+@misc{202609_chaubey_barrier,
+  bibtex_show = {true},
+  title       = {Barrier {Certificate} {Synthesis} for {Non}-{Polynomial}
+                 {Robotic} {Dynamics} via {Polynomial} {Lifting}},
+  author      = {Chaubey, Shivam and Verdoja, Francesco and Deka, Shankar and
+                 Kyrki, Ville},
+  url         = {http://arxiv.org/abs/2609.22885},
+  month       = sep,
+  year        = {2026},
+  abstract    = {Safe operation of robotic systems requires trajectories to
+                 remain within a prescribed safe set under admissible control
+                 inputs. Barrier certificates provide such guarantees by
+                 certifying a controlled-invariant region within that set.
+                 Sum-of-squares optimization offers a systematic way to
+                 synthesize such certificates, but its direct application
+                 requires polynomial dynamics, excluding common robotic
+                 nonlinearities, including trigonometric terms. We address this
+                 limitation using exact polynomial lifting, which replaces
+                 non-polynomial dynamics with polynomial-augmented dynamics
+                 subject to lifting-induced algebraic constraints, preserving
+                 nonlinear geometry without approximation. We formulate
+                 lifted-domain joint barrier synthesis that computes a
+                 certificate with a state-feedback control witness and develop a
+                 sampled-data safety filter for zero-order-hold implementation.
+                 To assess whether the benefits of lifting persist across
+                 synthesis frameworks, we also adapt a sample-guided
+                 successive-barrier method to the lifted representation. On
+                 coordinated-turn and planar multirotor models, exact lifting
+                 improves certified coverage in both methods: at matched sample
+                 sizes, lifted successive-barrier synthesis achieves higher
+                 coverage with fewer barriers and lower computational cost,
+                 while lifted joint barrier synthesis provides higher coverage
+                 and lower computational cost than the finest tested piecewise
+                 resolution. In closed-loop experiments, the safety filter
+                 maintains feasibility and safety across all evaluated
+                 trajectories, reduces spatial conservativeness, and requires
+                 less intervention for both models.},
+  arxiv       = {2609.22885},
+  pdf         = {https://arxiv.org/pdf/2609.22885},
+  abbr        = {OJ-CSYS},
+  preview     = {26_ojcsys.png},
+  publisher   = {arXiv},
+  note        = {IEEE Open Journal of Control Systems (OJ-CSYS) (submitted)}
+}
+
 @misc{202609_sakcak_information,
   bibtex_show = {true},
   title       = {An {Information}-{Space} {Perspective} to {Scene} {Graph}
